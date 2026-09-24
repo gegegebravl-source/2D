@@ -1,0 +1,18 @@
+{
+    "name": "EXFIL.Runtime",
+    "rootNamespace": "EXFIL",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.InputSystem",
+        "Unity.2D.Sprite",
+        "Unity.2D.Tilemap"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "versionDefines": [],
+    "noEngineReferences": false
+}
