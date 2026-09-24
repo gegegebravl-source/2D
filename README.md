@@ -128,6 +128,14 @@ Assets/
 
 Где брать CC0-модели — [Assets/Art/MODELS.md](Assets/Art/MODELS.md).
 
+### Иконки предметов
+
+`Assets/Art/Icons/*.png` — листы 4×3 (медицина, еда, материалы, патроны, снаряжение),
+`Assets/Art/Plants/*.png` — стадии растений, `Assets/Art/Characters/*.png` — персонажи и торговцы.
+Нарежьте их: **EXFIL → Art → Slice selected sprite sheets by grid** (если фон не прозрачный —
+**Remove background (corner colour)**), затем перетащите спрайты в поле `Icon` нужных
+`ItemDefinition` / `Portrait` персонажей и торговцев.
+
 ---
 
 ## Известные ограничения (осознанные)
