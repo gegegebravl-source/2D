@@ -48,6 +48,14 @@ namespace EXFIL.Items
         public List<string> DefaultModules = new List<string>();
 
         [Header("Visuals")]
+        public Sprite IconSprite;                 // 2D icon used by the inventory UI (already in ItemDefinition.Icon)
+        [Tooltip("First person view model. Empty = primitive stand-in is generated at runtime.")]
+        public GameObject ViewModelPrefab;
+        public Vector3 ViewModelOffset = new Vector3(0.18f, -0.16f, 0.32f);
+        public Vector3 ViewModelAimOffset = new Vector3(0f, -0.085f, 0.24f);
+        public Vector3 ViewModelEuler = new Vector3(0f, 0f, 0f);
+        [Tooltip("World model dropped on death / shown on bots.")]
+        public GameObject WorldModelPrefab;
         public Sprite WeaponSprite;
         public Vector2 MuzzleOffset = new Vector2(0.55f, 0.02f);
         public Vector2 GripOffset = new Vector2(0.15f, -0.05f);

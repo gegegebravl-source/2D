@@ -74,6 +74,15 @@ namespace EXFIL.Characters
         {
             get { return FrameSet != null && FrameSet.IsValid; }
         }
+
+        // ------------------------------------------------------------- 3D model
+        [Header("3D")]
+        [Tooltip("Real 3D mesh attached to the character body. Empty = primitive stub is generated.")]
+        public UnityEngine.GameObject Prefab3D;
+        public AttachPoint AttachPoint3D = AttachPoint.Chest;
+        public UnityEngine.Vector3 Offset3D = UnityEngine.Vector3.zero;
+        public UnityEngine.Vector3 Rotation3D = UnityEngine.Vector3.zero;
+        public UnityEngine.Vector3 Scale3D = UnityEngine.Vector3.one;
     }
 
     /// <summary>Named render layer of the 2D paper doll, ordered back to front.</summary>
