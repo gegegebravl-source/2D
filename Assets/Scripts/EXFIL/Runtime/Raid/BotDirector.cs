@@ -61,6 +61,21 @@ namespace EXFIL.Raid
             }
         }
 
+        /// <summary>Random operator model so a squad never looks like clones.</summary>
+        private static CharacterDefinition PickBotDefinition(BotProfile profile, Rng rng)
+        {
+            Meta.GameSession session = Meta.GameSession.Instance;
+            if (session == null || session.Characters == null || session.Characters.Count == 0) return null;
+            // faction flavoured pick: west contract bots prefer the last half of the roster
+            int count = session.Characters.Count;
+            if (profile != null && profile.Faction == Characters.Faction.WestContract && count > 1)
+            {
+                int index = count / 2 + (rng != null ? rng.Range(0, count - count / 2) : 0);
+                return session.Characters[Mathf.Clamp(index, 0, count - 1)];
+            }
+            return rng != null ? rng.Pick(session.Characters) : session.Characters[0];
+        }
+
         public BotController SpawnBot(string profileId)
         {
             BotProfile profile = FindProfile(profileId);
@@ -78,19 +93,17 @@ namespace EXFIL.Raid
             GameObject go = new GameObject("Bot_" + profile.DisplayName);
             go.transform.SetPositionAndRotation(spawn.position, spawn.rotation);
 
-            CharacterBody3D body = CharacterBody3D.Spawn(null, go.transform, spawn.position, spawn.rotation);
+            // a real operator model when the art pipeline ran, primitive stand-in otherwise
+            CharacterDefinition skin = PickBotDefinition(profile, _rng);
+            CharacterBody3D body = CharacterBody3D.Spawn(skin, go.transform, spawn.position, spawn.rotation);
             body.transform.localPosition = Vector3.zero;
             body.transform.localRotation = Quaternion.identity;
-
-            Material factionMaterial = null;
-            if (profile.Faction == Characters.Faction.WestContract)
-                factionMaterial = null; // placeholder body already tinted per faction
-            if (factionMaterial != null) { }
 
             HealthController health = go.AddComponent<HealthController>();
             health.Reset();
 
-            Combat.Hitbox.BuildHitboxes(body, health);
+            // rigged operator prefabs already carry a collider per body part
+            if (body.IsPlaceholder) Combat.Hitbox.BuildHitboxes(body, health);
 
             NavMeshAgent agent = go.AddComponent<NavMeshAgent>();
             agent.height = 1.8f;

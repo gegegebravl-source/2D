@@ -184,6 +184,16 @@ namespace EXFIL.Raid
             UI.GameUI.Instance?.ShowRaidResult(result, TimeLeft);
         }
 
+        /// <summary>Player quits mid-raid from the pause menu: counts as a death.</summary>
+        public void AbandonRaid(string reason)
+        {
+            if (Status != RaidStatus.InProgress) { LeaveToHideout(); return; }
+            PlayerActor player = _players.Count > 0 ? _players[0] : null;
+            if (player != null) FinishForPlayer(player, RaidResult.Killed);
+            EndRaid(RaidResult.Killed);
+            Debug.Log("[EXFIL] Raid abandoned (" + reason + ").");
+        }
+
         public void LeaveToHideout()
         {
             Meta.GameSession.Instance?.Save();

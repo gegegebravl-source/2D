@@ -63,8 +63,127 @@ namespace EXFIL.UI
             EXFILInput.Frame input = EXFILInput.Sample();
             if (input.Inventory) ToggleInventory();
 
-            if (Input.GetKeyDown(KeyCode.Escape) && _currentWindow != null)
-                CloseWindow();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (_currentWindow != null) CloseWindow();
+                else OpenMainMenu();
+            }
+            if (Input.GetKeyDown(KeyCode.M)) OpenMainMenu();
+            if (Input.GetKeyDown(KeyCode.O)) OpenOperators();
+            if (Input.GetKeyDown(KeyCode.F1)) OpenHelp();
+        }
+
+        // -------------------------------------------------------------- main menu
+        /// <summary>Pause / hub menu: operators, stash, traders, quests, raid control.</summary>
+        public void OpenMainMenu()
+        {
+            RectTransform window = OpenWindow("EXFIL", 760f, 560f);
+            RectTransform list = UIFactory.VerticalList(window, 8f, 16f);
+            list.anchorMin = new Vector2(0.5f, 0.5f);
+            list.anchorMax = new Vector2(0.5f, 0.5f);
+            list.sizeDelta = new Vector2(560f, 460f);
+
+            Meta.GameSession session = Meta.GameSession.Instance;
+            string operatorName = session != null && session.CurrentCharacter != null
+                ? session.CurrentCharacter.DisplayName : "not selected";
+            UIFactory.Text(list, "Operator: " + operatorName, 18, TextAnchor.MiddleCenter);
+            UIFactory.Text(list, "Profile: " + (session != null && session.Profile != null
+                ? session.Profile.Stash.AllItems().Count + " items in stash" : "no profile"), 14, TextAnchor.MiddleCenter);
+
+            UIFactory.Button(list, "Select operator", OpenOperators);
+            UIFactory.Button(list, "Stash", OpenStash);
+            UIFactory.Button(list, "Hideout upgrades", OpenHideout);
+            UIFactory.Button(list, "Traders", OpenTraders);
+            UIFactory.Button(list, "Quests", OpenQuests);
+            UIFactory.Button(list, "Controls (F1)", OpenHelp);
+
+            RaidManager raid = RaidManager.Instance;
+            if (raid != null && raid.Status == RaidStatus.InProgress)
+                UIFactory.Button(list, "Leave raid (counts as death)", () => raid.AbandonRaid("left via menu"),
+                    new Color(0.45f, 0.20f, 0.18f));
+            else
+                UIFactory.Button(list, "Back to game", CloseWindow);
+        }
+
+        /// <summary>Operator select: the six playable characters with their perks.</summary>
+        public void OpenOperators()
+        {
+            RectTransform window = OpenWindow("Select operator", 980f, 680f);
+            Meta.GameSession session = Meta.GameSession.Instance;
+
+            RectTransform scroll = UIFactory.ScrollArea(window, out RectTransform content);
+            scroll.GetComponent<RectTransform>().sizeDelta = new Vector2(900f, 540f);
+
+            List<Characters.CharacterDefinition> characters = session != null
+                ? session.Characters
+                : new List<Characters.CharacterDefinition>();
+            if (characters.Count == 0)
+            {
+                string[] guids = new string[0];
+                UIFactory.Text(content, "No operators found. Run EXFIL / Setup / Run full setup.", 16, TextAnchor.MiddleLeft);
+                return;
+            }
+
+            for (int i = 0; i < characters.Count; i++)
+            {
+                Characters.CharacterDefinition definition = characters[i];
+                if (definition == null) continue;
+                bool selected = session != null && session.CurrentCharacter == definition;
+                RectTransform row = UIFactory.Row(content, 74f, selected
+                    ? new Color(0.20f, 0.30f, 0.22f, 0.95f)
+                    : new Color(0.14f, 0.15f, 0.16f, 0.9f));
+
+                string title = definition.DisplayName + "  "" + definition.Callsign + """;
+                UIFactory.Text(row, title, 17, TextAnchor.UpperLeft);
+                string info = definition.Faction + "   HP+" + definition.HealthBonus +
+                              "  Stamina+" + definition.StaminaBonus + "  Carry+" + definition.CarryBonus +
+                              "
+Perks: " + PerkSummary(definition);
+                UIFactory.Text(row, info, 13, TextAnchor.MiddleLeft);
+
+                Characters.CharacterDefinition captured = definition;
+                UIFactory.Button(row, selected ? "Active" : "Select", () =>
+                {
+                    if (Meta.GameSession.Instance != null) Meta.GameSession.Instance.CurrentCharacter = captured;
+                    OpenOperators();
+                });
+            }
+            UIFactory.Text(window, "Esc - close   |   M - menu   |   O - operators", 12, TextAnchor.LowerCenter);
+        }
+
+        private static string PerkSummary(Characters.CharacterDefinition definition)
+        {
+            if (definition.Perks == null || definition.Perks.Count == 0) return "none";
+            string result = "";
+            for (int i = 0; i < definition.Perks.Count; i++)
+            {
+                if (i > 0) result += ", ";
+                result += definition.Perks[i].Skill + " " + definition.Perks[i].StartingLevel;
+            }
+            return result;
+        }
+
+        /// <summary>Controls sheet.</summary>
+        public void OpenHelp()
+        {
+            RectTransform window = OpenWindow("Controls", 720f, 620f);
+            RectTransform list = UIFactory.VerticalList(window, 4f, 16f);
+            string[] lines =
+            {
+                "WASD - move          Shift - sprint       C - crouch / prone (cycle)",
+                "Space - jump          Mouse1 - fire        Mouse2 - aim (ADS)",
+                "R - reload            B - fire mode        V - melee",
+                "F - interact / loot   Tab - inventory      M - menu",
+                "O - operators         F1 - this help       Esc - close window",
+                "1..4 - quick slots    H - use quick medical",
+                "",
+                "Raid: reach a green exfil zone and hold position for 6 s to extract.",
+                "Death costs everything except the secure container.",
+                "Hideout: use the stations (stash, workbench, medstation, greenhouse, generator...)",
+                "to craft, heal, upgrade modules and grow the plants used in recipes."
+            };
+            for (int i = 0; i < lines.Length; i++)
+                UIFactory.Text(list, lines[i], 14, TextAnchor.MiddleLeft);
         }
 
         public bool CursorUnlocked
@@ -165,7 +284,7 @@ namespace EXFIL.UI
                 if (item != null)
                 {
                     if (item.Def.CanEquip)
-                        AddButton(row, "Unequip", () => { inventory.UnequipSlot(slot); OpenStash(); }, 110f);
+                        AddButton(row, "Unequip", () => { inventory.Unequip(slot); OpenStash(); }, 110f);
                     if (item.Def is MedicalItemDefinition || item.Def is ConsumableItemDefinition)
                         AddButton(row, "Use", () => UseItemAnywhere(item), 80f);
                 }

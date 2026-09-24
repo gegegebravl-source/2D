@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using EXFIL.Core;
+using EXFIL.Items;
 
 namespace EXFIL.Progression
 {

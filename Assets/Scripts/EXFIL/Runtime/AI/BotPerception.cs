@@ -1,5 +1,6 @@
 using UnityEngine;
 using EXFIL.Core;
+using EXFIL.Characters;
 
 namespace EXFIL.AI
 {

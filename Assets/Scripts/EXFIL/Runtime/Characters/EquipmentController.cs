@@ -80,10 +80,18 @@ namespace EXFIL.Characters
             if (visual == null) return;
 
             AttachPoint point = SlotToAttachPoint(slot, visual);
-            GameObject prefab = visual.Prefab3D != null ? visual.Prefab3D : PlaceholderGear.Get(slot, instance.Def);
-            if (prefab == null) return;
-
-            GameObject attached = Body.AttachGear(point, prefab, visual.Offset3D, visual.Rotation3D, visual.Scale3D);
+            GameObject attached;
+            if (visual.Prefab3D != null)
+            {
+                // real imported model wins
+                attached = Body.AttachGear(point, visual.Prefab3D, visual.Offset3D, visual.Rotation3D, visual.Scale3D);
+            }
+            else
+            {
+                // gear built to measure around the body it stacks on
+                Transform anchor = Body.AnchorFor(point);
+                attached = GearFactory.Build(slot, instance.Def, visual, anchor);
+            }
             if (attached != null) _spawnedGear.Add(attached);
         }
 
@@ -118,68 +126,4 @@ namespace EXFIL.Characters
         }
     }
 
-    /// <summary>Library of primitive stand-ins used until real models are imported.</summary>
-    public static class PlaceholderGear
-    {
-        private static readonly Dictionary<string, GameObject> _cache = new Dictionary<string, GameObject>();
-
-        public static GameObject Get(EquipmentSlot slot, ItemDefinition def)
-        {
-            string key = slot + "_" + (def != null ? def.Id : "none");
-            GameObject prefab;
-            if (_cache.TryGetValue(key, out prefab) && prefab != null) return prefab;
-
-            GameObject go = new GameObject("Stub_" + key) { hideFlags = HideFlags.HideAndDontSave };
-            GameObject visual = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            visual.transform.SetParent(go.transform, false);
-
-            switch (slot)
-            {
-                case EquipmentSlot.ArmorVest:
-                    visual.transform.localScale = new Vector3(0.50f, 0.44f, 0.32f);
-                    SetColor(visual, new Color(0.25f, 0.30f, 0.22f));
-                    break;
-                case EquipmentSlot.ChestRig:
-                    visual.transform.localScale = new Vector3(0.48f, 0.30f, 0.30f);
-                    SetColor(visual, new Color(0.52f, 0.42f, 0.26f));
-                    break;
-                case EquipmentSlot.Helmet:
-                    visual.transform.localScale = new Vector3(0.30f, 0.26f, 0.32f);
-                    SetColor(visual, new Color(0.18f, 0.22f, 0.18f));
-                    break;
-                case EquipmentSlot.Headwear:
-                    visual.transform.localScale = new Vector3(0.26f, 0.12f, 0.26f);
-                    SetColor(visual, new Color(0.35f, 0.33f, 0.28f));
-                    break;
-                case EquipmentSlot.Backpack:
-                    visual.transform.localScale = new Vector3(0.36f, 0.46f, 0.22f);
-                    visual.transform.localPosition = new Vector3(0f, 0f, -0.16f);
-                    SetColor(visual, new Color(0.20f, 0.22f, 0.20f));
-                    break;
-                case EquipmentSlot.FaceCover:
-                    visual.transform.localScale = new Vector3(0.20f, 0.14f, 0.04f);
-                    SetColor(visual, new Color(0.16f, 0.16f, 0.16f));
-                    break;
-                default:
-                    visual.transform.localScale = new Vector3(0.46f, 0.50f, 0.28f);
-                    SetColor(visual, new Color(0.30f, 0.32f, 0.28f));
-                    break;
-            }
-
-            Collider collider = visual.GetComponent<Collider>();
-            if (collider != null) Object.Destroy(collider);
-
-            _cache[key] = go;
-            return go;
-        }
-
-        private static void SetColor(GameObject go, Color color)
-        {
-            Renderer renderer = go.GetComponent<Renderer>();
-            if (renderer == null) return;
-            Material material = new Material(Shader.Find("Standard"));
-            material.color = color;
-            renderer.material = material;
-        }
-    }
 }

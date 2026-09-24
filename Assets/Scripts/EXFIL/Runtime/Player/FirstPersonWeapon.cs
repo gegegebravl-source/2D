@@ -105,9 +105,9 @@ namespace EXFIL.Player
             GameObject root = new GameObject("VM_" + def.name) { hideFlags = HideFlags.DontSave };
             root.transform.SetParent(ViewModelRoot, false);
 
-            Material dark = new Material(Shader.Find("Standard")) { color = new Color(0.13f, 0.13f, 0.14f) };
-            Material metal = new Material(Shader.Find("Standard")) { color = new Color(0.26f, 0.26f, 0.28f) };
-            Material wood = new Material(Shader.Find("Standard")) { color = new Color(0.34f, 0.22f, 0.12f) };
+            Material dark = EXFIL.Art.VisualMaterials.Solid("wpn_dark", new Color(0.13f, 0.13f, 0.14f));
+            Material metal = EXFIL.Art.VisualMaterials.Solid("wpn_metal", new Color(0.26f, 0.26f, 0.28f), 0.35f, 0.6f);
+            Material wood = EXFIL.Art.VisualMaterials.Solid("wpn_wood", new Color(0.34f, 0.22f, 0.12f));
 
             bool isPistol = def.WeaponClass == Core.WeaponClass.Pistol;
             float length = isPistol ? 0.20f : 0.52f;

@@ -33,6 +33,11 @@ namespace EXFIL.Characters
         public CharacterDefinition Definition { get; private set; }
         public bool IsPlaceholder { get; private set; }
 
+        /// <summary>Local player body renders shadows only (no head-in-camera artefacts).</summary>
+        public bool LocalViewShadowsOnly { get; private set; }
+        public RiggedCharacter Rig { get; private set; }
+        public bool HasRealRig { get { return Rig != null && Rig.Clips != null && Rig.Clips.Clips.Count > 0; } }
+
         public static CharacterBody3D Spawn(CharacterDefinition definition, Transform parent, Vector3 position, Quaternion rotation)
         {
             GameObject go;
@@ -56,6 +61,12 @@ namespace EXFIL.Characters
             }
 
             body.Definition = definition;
+            body.Rig = go.GetComponent<RiggedCharacter>();
+            if (body.Rig != null)
+            {
+                body.Rig.Configure(body.Rig.Clips);
+                body.IsPlaceholder = false;
+            }
             body.CollectAnchors();
             return body;
         }
@@ -114,13 +125,28 @@ namespace EXFIL.Characters
 
         private static Material CreateMaterial(Color color)
         {
-            Material material = new Material(Shader.Find("Standard"));
-            material.color = color;
-            return material;
+            return Art.VisualMaterials.Solid("body", color, 0.1f);
         }
 
         private void CollectAnchors()
         {
+            if (Rig != null)
+            {
+                Transform head = Rig.GetAttach(Art.AttachRoles.Head);
+                Transform chest = Rig.GetAttach(Art.AttachRoles.Chest);
+                Transform spine = Rig.GetAttach(Art.AttachRoles.Spine);
+                Transform hips = Rig.GetAttach(Art.AttachRoles.Hips);
+                Transform face = Rig.GetAttach(Art.AttachRoles.Face);
+                Transform back = Rig.GetAttach(Art.AttachRoles.Back);
+                Transform rightHand = Rig.GetAttach(Art.AttachRoles.RightHand);
+                if (head != null) HeadAnchor = head;
+                if (chest != null) ChestAnchor = chest;
+                if (spine != null) SpineAnchor = spine;
+                if (hips != null) HipsAnchor = hips;
+                if (face != null) FaceAnchor = face;
+                if (back != null) BackAnchor = back;
+                if (rightHand != null) RightHandAnchor = rightHand;
+            }
             if (HeadAnchor == null) HeadAnchor = FindRecursive(transform, "Head");
             if (FaceAnchor == null) FaceAnchor = FindRecursive(transform, "Face");
             if (SpineAnchor == null) SpineAnchor = FindRecursive(transform, "Spine");
@@ -175,7 +201,78 @@ namespace EXFIL.Characters
             list.Add(instance);
 
             Renderer[] renderers = instance.GetComponentsInChildren<Renderer>();
-            for (int i = 0; i < renderers.Length; i++) GearRenderers.Add(renderers[i]);
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                GearRenderers.Add(renderers[i]);
+                if (LocalViewShadowsOnly)
+                    renderers[i].shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+            }
+            return instance;
+        }
+
+        // ------------------------------------------------------- animation bridge
+        public void SetLocomotion(float speedNormalized, bool running)
+        {
+            if (Rig != null) Rig.SetLocomotion(speedNormalized, running);
+        }
+
+        public void SetAiming(bool aiming, bool twoHanded)
+        {
+            if (Rig != null) Rig.SetAim(aiming, twoHanded);
+        }
+
+        public void SetPitch(float pitch)
+        {
+            if (Rig != null) Rig.AimPitch = pitch;
+        }
+
+        public void SetCrouch(bool crouched)
+        {
+            if (Rig != null) Rig.SetCrouch(crouched);
+        }
+
+        public void PlayShoot(bool twoHanded)
+        {
+            if (Rig != null) Rig.PlayShoot(twoHanded);
+        }
+
+        public void PlayReload(bool twoHanded)
+        {
+            if (Rig != null) Rig.PlayReload(twoHanded);
+        }
+
+        public void PlayHit()
+        {
+            if (Rig != null) Rig.PlayHit();
+        }
+
+        public void PlayDeath()
+        {
+            if (Rig != null) Rig.PlayDeath();
+        }
+
+        public void PlayInteract()
+        {
+            if (Rig != null) Rig.PlayInteract();
+        }
+
+        /// <summary>Attaches a prefab to a rig role (weapon in hand, gear on the chest...).</summary>
+        public GameObject AttachToRole(string role, GameObject prefab, Vector3 offset, Vector3 euler, Vector3 scale)
+        {
+            Transform anchor = Rig != null ? Rig.GetAttach(role) : null;
+            if (anchor == null || prefab == null) return null;
+            GameObject instance = Instantiate(prefab, anchor);
+            instance.transform.localPosition = offset;
+            instance.transform.localEulerAngles = euler;
+            instance.transform.localScale = scale;
+            instance.name = prefab.name;
+            Renderer[] renderers = instance.GetComponentsInChildren<Renderer>();
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                GearRenderers.Add(renderers[i]);
+                if (LocalViewShadowsOnly)
+                    renderers[i].shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+            }
             return instance;
         }
 
@@ -186,6 +283,26 @@ namespace EXFIL.Characters
                     if (pair.Value[i] != null) Destroy(pair.Value[i]);
             _attached.Clear();
             GearRenderers.Clear();
+        }
+
+        /// <summary>For the local player the body is invisible but still casts shadows.</summary>
+        public void SetLocalPlayerView(bool shadowsOnly)
+        {
+            LocalViewShadowsOnly = shadowsOnly;
+            ApplyVisibilityMode();
+        }
+
+        private void ApplyVisibilityMode()
+        {
+            Renderer[] renderers = GetComponentsInChildren<Renderer>(true);
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i] == null) continue;
+                renderers[i].shadowCastingMode = LocalViewShadowsOnly
+                    ? UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly
+                    : UnityEngine.Rendering.ShadowCastingMode.On;
+                renderers[i].enabled = true;
+            }
         }
 
         public void SetVisible(bool visible)

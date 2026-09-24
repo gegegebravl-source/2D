@@ -10,6 +10,7 @@ using EXFIL.Economy;
 using EXFIL.Hideout;
 using EXFIL.Items;
 using EXFIL.Progression;
+using EXFIL;
 
 namespace EXFILEditor
 {

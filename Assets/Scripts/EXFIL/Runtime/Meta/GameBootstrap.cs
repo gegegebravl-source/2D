@@ -4,6 +4,7 @@ using EXFIL.Core;
 using EXFIL.Items;
 using EXFIL.Player;
 using EXFIL.Raid;
+using EXFIL.Characters;
 
 namespace EXFIL.Meta
 {

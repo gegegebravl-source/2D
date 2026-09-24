@@ -1,6 +1,7 @@
 using UnityEngine;
 using EXFIL.Characters;
 using EXFIL.Items;
+using EXFIL.Core;
 
 namespace EXFIL.Player
 {

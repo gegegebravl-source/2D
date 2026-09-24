@@ -54,8 +54,14 @@ namespace EXFIL.Items
         public Vector3 ViewModelOffset = new Vector3(0.18f, -0.16f, 0.32f);
         public Vector3 ViewModelAimOffset = new Vector3(0f, -0.085f, 0.24f);
         public Vector3 ViewModelEuler = new Vector3(0f, 0f, 0f);
-        [Tooltip("World model dropped on death / shown on bots.")]
+        [Tooltip("World model held by bots / dropped on death / shown on corpses.")]
         public GameObject WorldModelPrefab;
+        [Tooltip("Local offset of the world model inside the right hand anchor.")]
+        public Vector3 WorldModelOffset = new Vector3(0f, 0f, 0.06f);
+        public Vector3 WorldModelEuler = new Vector3(0f, 90f, 0f);
+        public float WorldModelScale = 1f;
+        [Tooltip("True for rifles/carbines: the rig switches to the two handed aim pose.")]
+        public bool TwoHanded = true;
         public Sprite WeaponSprite;
         public Vector2 MuzzleOffset = new Vector2(0.55f, 0.02f);
         public Vector2 GripOffset = new Vector2(0.15f, -0.05f);

@@ -10,6 +10,7 @@ using EXFIL.Hideout;
 using EXFIL.Items;
 using EXFIL.Player;
 using EXFIL.Raid;
+using EXFIL;
 
 namespace EXFILEditor
 {
@@ -19,10 +20,8 @@ namespace EXFILEditor
         // ------------------------------------------------------------- primitives
         private static Material Mat(string name, Color color)
         {
-            Material material = new Material(Shader.Find("Standard"));
-            material.color = color;
-            material.name = name;
-            return material;
+            // asset backed: a plain "new Material()" would be lost when the scene is saved
+            return EXFILEditor.EditorMaterials.Get(name, color);
         }
 
         private static GameObject Box(string name, Transform parent, Vector3 position, Vector3 scale, Material material, bool collider = true)
@@ -219,6 +218,11 @@ namespace EXFILEditor
             RenderSettings.fog = true;
             RenderSettings.fogColor = new Color(0.08f, 0.09f, 0.10f);
             RenderSettings.fogDensity = 0.035f;
+
+            // dress the shell with real CC0 models (no-op when the art pipeline has not run)
+            int decorCount = EXFILEditor.WorldDecorator.DecorateHideout();
+            EXFILEditor.WorldDecorator.MarkStaticObstacles(true);
+            if (decorCount > 0) Debug.Log("[EXFIL] hideout decorated with " + decorCount + " model groups");
 
             BakeNavMesh();
 
@@ -487,6 +491,10 @@ namespace EXFILEditor
             RenderSettings.fog = true;
             RenderSettings.fogColor = new Color(0.34f, 0.36f, 0.36f);
             RenderSettings.fogDensity = 0.012f;
+
+            int raidDecor = EXFILEditor.WorldDecorator.DecorateRaid();
+            EXFILEditor.WorldDecorator.MarkStaticObstacles(true);
+            if (raidDecor > 0) Debug.Log("[EXFIL] raid map decorated with " + raidDecor + " model groups");
 
             BakeNavMesh();
 

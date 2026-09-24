@@ -2,6 +2,7 @@ using UnityEngine;
 using EXFIL.Characters;
 using EXFIL.Combat;
 using EXFIL.Core;
+using EXFIL.Items;
 
 namespace EXFIL.Player
 {
@@ -22,6 +23,8 @@ namespace EXFIL.Player
         public SkillSet Skills;
         public Camera ViewCamera;
         public CharacterBody3D Body;
+        [Tooltip("Spawns the rigged operator body for the local player.")]
+        public Characters.PlayerBodyMount BodyMount;
 
         [Header("Settings")]
         public bool LockCursorOnStart = true;
@@ -30,6 +33,8 @@ namespace EXFIL.Player
         public uint NetId;
 
         private EXFILInput.Frame _input;
+        private GameObject _handWeapon;
+        private ItemInstance _handWeaponItem;
         private float _distanceTravelled;
         private bool _aimHeld;
 
@@ -60,12 +65,27 @@ namespace EXFIL.Player
             {
                 Health.CharacterName = Loadout != null ? gameObject.name : "Operator";
                 Health.OnDied += OnDeath;
+                Health.OnDamaged += OnDamagedVisual;
             }
+            // the local player sees the world from the eyes: keep the body for shadows only
+            if (Body != null) Body.SetLocalPlayerView(true);
         }
 
         public void Initialize(CharacterDefinition definition, Inventory inventory, uint netId)
         {
             NetId = netId;
+            if (BodyMount == null) BodyMount = GetComponentInChildren<Characters.PlayerBodyMount>();
+            if (BodyMount != null)
+            {
+                BodyMount.Owner = this;
+                BodyMount.Equipment = Loadout != null ? Loadout.Equipment : GetComponent<EquipmentController>();
+                Body = BodyMount.Build(definition);
+                if (Loadout != null && Loadout.Equipment != null)
+                {
+                    Loadout.Equipment.Body = Body;
+                    Loadout.Equipment.Rebuild();
+                }
+            }
             if (Loadout != null) Loadout.Initialize(definition, inventory, netId, definition != null ? definition.DisplayName : "Operator");
             if (Health != null) Health.NetId = netId;
         }
@@ -80,6 +100,45 @@ namespace EXFIL.Player
             HandleWeapons();
             HandleInteraction();
             HandleMovementXp();
+            DriveAnimation();
+        }
+
+        /// <summary>Mirrors player state onto the rigged body (shadows, mirrors, other players).</summary>
+        private void DriveAnimation()
+        {
+            if (Body == null) return;
+            float speed = Motor != null ? Motor.CurrentSpeed : 0f;
+            bool running = Motor != null && Motor.IsSprinting;
+            Body.SetLocomotion(Mathf.Clamp01(speed / 3.1f), running);
+            Body.SetCrouch(Motor != null && Motor.Stance == Core.MovementStance.Crouch);
+            bool aiming = ViewModel != null && ViewModel.IsAiming;
+            bool twoHanded = Loadout == null || Loadout.ActiveWeapon == null ||
+                             Loadout.ActiveWeapon.Def is Items.WeaponItemDefinition two && two.TwoHanded;
+            Body.SetAiming(aiming, twoHanded);
+            if (Look != null) Body.SetPitch(Look.Pitch);
+
+            // keep the weapon in the body's hand so shadows / mirrors / netcode look right
+            ItemInstance active = Loadout != null ? Loadout.ActiveWeapon : null;
+            if (active != _handWeaponItem) RebuildHandWeapon(active);
+        }
+
+        private void RebuildHandWeapon(ItemInstance weapon)
+        {
+            if (_handWeapon != null) Destroy(_handWeapon);
+            _handWeapon = null;
+            _handWeaponItem = weapon;
+            if (weapon == null || Body == null) return;
+            Items.WeaponItemDefinition def = weapon.Def as Items.WeaponItemDefinition;
+            if (def == null) return;
+            GameObject prefab = def.WorldModelPrefab != null ? def.WorldModelPrefab : def.ViewModelPrefab;
+            if (prefab == null) return;
+            _handWeapon = Body.AttachToRole(Characters.AttachRoles.RightHand, prefab,
+                def.WorldModelOffset, def.WorldModelEuler, Vector3.one * def.WorldModelScale);
+        }
+
+        private void OnDamagedVisual(Core.BodyPart part, float damage, Characters.DamageInfo info)
+        {
+            if (Body != null) Body.PlayHit();
         }
 
         private void FixedUpdate()
@@ -130,6 +189,12 @@ namespace EXFIL.Player
             }
 
             bool fired = Loadout.TryFire(_input.FirePressed, _input.Fire, Time.deltaTime);
+            if (fired && Body != null)
+            {
+                Items.WeaponItemDefinition firedDef = Loadout.ActiveWeapon != null
+                    ? Loadout.ActiveWeapon.Def as Items.WeaponItemDefinition : null;
+                Body.PlayShoot(firedDef == null || firedDef.TwoHanded);
+            }
             if (fired && ViewModel != null && Look != null)
             {
                 Vector2 kick = Loadout.ActiveWeapon != null ? Loadout.ActiveWeapon.GetRecoilKick() : Vector2.zero;
@@ -163,6 +228,8 @@ namespace EXFIL.Player
         private void OnDeath()
         {
             InputEnabled = false;
+            if (Body != null) Body.PlayDeath();
+            if (ViewModel != null) ViewModel.SetVisible(false);
             if (Motor != null) Motor.enabled = false;
             if (ViewCamera != null)
             {

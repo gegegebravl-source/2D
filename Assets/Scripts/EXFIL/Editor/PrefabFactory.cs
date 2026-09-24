@@ -3,6 +3,7 @@ using UnityEngine;
 using EXFIL.Characters;
 using EXFIL.Combat;
 using EXFIL.Player;
+using EXFIL;
 
 namespace EXFILEditor
 {
@@ -47,6 +48,14 @@ namespace EXFILEditor
 
             GameObject handHandler = new GameObject("Hands");
             handHandler.transform.SetParent(cameraObject.transform, false);
+
+            // body root: the rigged operator model is spawned here at runtime
+            GameObject bodyRoot = new GameObject("BodyRoot");
+            bodyRoot.transform.SetParent(root.transform, false);
+            bodyRoot.transform.localPosition = Vector3.zero;
+            Characters.PlayerBodyMount bodyMount = bodyRoot.AddComponent<Characters.PlayerBodyMount>();
+            bodyMount.Anchor = bodyRoot.transform;
+            bodyMount.ShadowsOnly = true;
 
             // components
             FpsController motor = root.AddComponent<FpsController>();
@@ -96,6 +105,9 @@ namespace EXFILEditor
             actor.Health = health;
             actor.Skills = skills;
             actor.ViewCamera = camera;
+            actor.BodyMount = bodyMount;
+            bodyMount.Owner = actor;
+            bodyMount.Equipment = equipment;
 
             AudioSource audio = root.AddComponent<AudioSource>();
             audio.spatialBlend = 0f;

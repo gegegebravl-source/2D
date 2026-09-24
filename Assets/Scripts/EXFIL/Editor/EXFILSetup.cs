@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using EXFIL.Art;
 
 namespace EXFILEditor
 {
@@ -10,18 +11,39 @@ namespace EXFILEditor
         public static void RunFullSetup()
         {
             if (!EditorUtility.DisplayDialog("EXFIL setup",
-                    "This will generate all content, the item database, the player prefab and both scenes.\n\n" +
-                    "Existing assets are kept as they are. Continue?", "Do it", "Cancel"))
+                    "This will:\n" +
+                    "1. import the CC0 3D models into Unity assets (meshes, materials, AnimationClips, prefabs)\n" +
+                    "2. seed all content (items, operators, modules, recipes, quests)\n" +
+                    "3. build the item database and the player prefab\n" +
+                    "4. build the Hideout and Raid scenes dressed with real models and a baked NavMesh\n\n" +
+                    "This can take a couple of minutes on the first run. Continue?", "Do it", "Cancel"))
                 return;
 
+            // 1. art first: everything else wires itself to the imported models
+            ModelLibrary library = AssetPipeline.Build(true);
+
+            // 2. content
             ContentSeeder.SeedAll();
             PrefabFactory.BuildItemDatabase();
             PrefabFactory.BuildPlayerPrefab();
             AssetDatabase.SaveAssets();
+
+            // 3. wire the art into items, plants and operators
+            if (library != null) ArtWiring.WireAll();
+
+            // 4. scenes
             SceneBuilder.BuildHideoutScene();
             SceneBuilder.BuildRaidScene();
 
             Debug.Log("[EXFIL] Setup complete. Open Assets/Scenes/Hideout.unity and press Play.");
+        }
+
+        [MenuItem("EXFIL/Setup/0 - Import 3D models (CC0 art pipeline)", false, 19)]
+        public static void ImportArt()
+        {
+            ModelLibrary library = AssetPipeline.Build(true);
+            if (library != null) ArtWiring.WireAll();
+            Debug.Log("[EXFIL] Art import finished: " + (library != null ? library.Entries.Count : 0) + " models.");
         }
 
         [MenuItem("EXFIL/Setup/1 - Seed content (items, operators, modules, recipes)", false, 20)]

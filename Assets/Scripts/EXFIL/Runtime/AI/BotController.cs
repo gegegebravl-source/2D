@@ -79,6 +79,12 @@ namespace EXFIL.AI
 
             CharacterBody3D existing = GetComponentInChildren<CharacterBody3D>();
             if (existing != null) Body = existing;
+            AttachWeaponVisual(weapon);
+            if (Health != null)
+            {
+                Health.OnDamaged += OnBotDamaged;
+                Health.OnDied += OnBotDiedVisual;
+            }
 
             Perception = gameObject.AddComponent<BotPerception>();
             Perception.Initialize(profile, transform);
@@ -105,6 +111,76 @@ namespace EXFIL.AI
             Scan();
             Think();
             Act();
+            DriveAnimation();
+        }
+
+        // ------------------------------------------------------------------- visuals
+        private void AttachWeaponVisual(ItemInstance weapon)
+        {
+            if (Body == null || weapon == null || Weapon == null) return;
+            WeaponItemDefinition def = weapon.Def as WeaponItemDefinition;
+            if (def == null) return;
+            GameObject prefab = def.WorldModelPrefab != null ? def.WorldModelPrefab : def.ViewModelPrefab;
+            if (prefab == null) return;
+            GameObject instance = Body.AttachToRole(Art.AttachRoles.RightHand, prefab, def.WorldModelOffset,
+                def.WorldModelEuler, Vector3.one * def.WorldModelScale);
+            if (instance == null) return;
+            Transform muzzle = FindDeep(instance.transform, "Muzzle");
+            if (muzzle != null) Weapon.Muzzle = muzzle;
+            Weapon.OnShot += OnBotShot;
+        }
+
+        private void OnBotShot(ItemInstance item, WeaponStats stats)
+        {
+            if (Body == null) return;
+            WeaponItemDefinition def = item != null ? item.Def as WeaponItemDefinition : null;
+            Body.PlayShoot(def == null || def.TwoHanded);
+        }
+
+        private void OnBotDamaged(BodyPart part, float damage, DamageInfo info)
+        {
+            if (Body != null) Body.PlayHit();
+        }
+
+        private void OnBotDiedVisual()
+        {
+            if (Body != null) Body.PlayDeath();
+        }
+
+        private bool TwoHandedWeapon
+        {
+            get
+            {
+                if (Weapon == null || Weapon.Definition == null) return true;
+                return Weapon.Definition.TwoHanded;
+            }
+        }
+
+        private void DriveAnimation()
+        {
+            if (Body == null) return;
+            float speed = Agent != null && Agent.enabled && Agent.isOnNavMesh ? Agent.velocity.magnitude : 0f;
+            bool running = speed > 4.2f;
+            Body.SetLocomotion(Mathf.Clamp01(speed / 3.2f), running);
+            bool engaged = State == BotState.Combat || State == BotState.Investigate;
+            Body.SetAiming(engaged, TwoHandedWeapon);
+            if (_target != null)
+            {
+                Vector3 flat = _target.position - transform.position;
+                Body.SetPitch(-Mathf.Atan2(flat.y, new Vector2(flat.x, flat.z).magnitude) * Mathf.Rad2Deg);
+            }
+            Body.SetCrouch(false);
+        }
+
+        private static Transform FindDeep(Transform root, string name)
+        {
+            if (root.name == name) return root;
+            for (int i = 0; i < root.childCount; i++)
+            {
+                Transform found = FindDeep(root.GetChild(i), name);
+                if (found != null) return found;
+            }
+            return null;
         }
 
         // ------------------------------------------------------------------ senses

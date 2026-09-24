@@ -1,0 +1,5311 @@
+{
+ "generated": "2026-09-24",
+ "models": [
+  {
+   "key": "wpn_pistol",
+   "file": "Weapons/wpn_pistol.expak",
+   "group": "kf",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "pistol"
+   ],
+   "size": [
+    0.88,
+    0.9,
+    1.6
+   ],
+   "min": [
+    -0.518,
+    -0.0,
+    -0.7
+   ],
+   "max": [
+    0.362,
+    0.9,
+    0.9
+   ],
+   "verts": 1124,
+   "tris": 624,
+   "bytes": 43595,
+   "source": "Kenney Starter Kit FPS (CC0)"
+  },
+  {
+   "key": "wpn_smg",
+   "file": "Weapons/wpn_smg.expak",
+   "group": "kf",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "smg"
+   ],
+   "size": [
+    0.88,
+    0.9,
+    1.6
+   ],
+   "min": [
+    -0.518,
+    -0.0,
+    -0.7
+   ],
+   "max": [
+    0.362,
+    0.9,
+    0.9
+   ],
+   "verts": 1124,
+   "tris": 624,
+   "bytes": 43589,
+   "source": "Kenney Starter Kit FPS (CC0)"
+  },
+  {
+   "key": "wpn_rifle",
+   "file": "Weapons/wpn_rifle.expak",
+   "group": "kf",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "rifle"
+   ],
+   "size": [
+    0.788,
+    0.85,
+    1.88
+   ],
+   "min": [
+    -0.394,
+    -0.0,
+    -0.7
+   ],
+   "max": [
+    0.394,
+    0.85,
+    1.18
+   ],
+   "verts": 1230,
+   "tris": 700,
+   "bytes": 47897,
+   "source": "Kenney Starter Kit FPS (CC0)"
+  },
+  {
+   "key": "wpn_ak",
+   "file": "Weapons/wpn_ak.expak",
+   "group": "kf",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "rifle"
+   ],
+   "size": [
+    0.788,
+    0.85,
+    1.88
+   ],
+   "min": [
+    -0.394,
+    -0.0,
+    -0.7
+   ],
+   "max": [
+    0.394,
+    0.85,
+    1.18
+   ],
+   "verts": 1230,
+   "tris": 700,
+   "bytes": 47891,
+   "source": "Kenney Starter Kit FPS (CC0)"
+  },
+  {
+   "key": "wpn_dmr",
+   "file": "Weapons/wpn_dmr.expak",
+   "group": "kk",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "dmr"
+   ],
+   "size": [
+    1.223,
+    0.479,
+    1.441
+   ],
+   "min": [
+    -0.612,
+    -0.171,
+    -0.278
+   ],
+   "max": [
+    0.612,
+    0.308,
+    1.163
+   ],
+   "verts": 942,
+   "tris": 792,
+   "bytes": 39781,
+   "source": "KayKit Adventurers (CC0)"
+  },
+  {
+   "key": "wpn_sniper",
+   "file": "Weapons/wpn_sniper.expak",
+   "group": "kk",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "sniper"
+   ],
+   "size": [
+    1.223,
+    0.479,
+    1.441
+   ],
+   "min": [
+    -0.612,
+    -0.171,
+    -0.278
+   ],
+   "max": [
+    0.612,
+    0.308,
+    1.163
+   ],
+   "verts": 942,
+   "tris": 792,
+   "bytes": 39787,
+   "source": "KayKit Adventurers (CC0)"
+  },
+  {
+   "key": "wpn_shotgun",
+   "file": "Weapons/wpn_shotgun.expak",
+   "group": "kf",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "shotgun"
+   ],
+   "size": [
+    0.788,
+    0.85,
+    1.88
+   ],
+   "min": [
+    -0.394,
+    -0.0,
+    -0.7
+   ],
+   "max": [
+    0.394,
+    0.85,
+    1.18
+   ],
+   "verts": 1230,
+   "tris": 700,
+   "bytes": 47901,
+   "source": "Kenney Starter Kit FPS (CC0)"
+  },
+  {
+   "key": "wpn_melee_knife",
+   "file": "Weapons/wpn_melee_knife.expak",
+   "group": "kk",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "melee"
+   ],
+   "size": [
+    0.259,
+    1.206,
+    0.152
+   ],
+   "min": [
+    -0.139,
+    -0.225,
+    -0.076
+   ],
+   "max": [
+    0.12,
+    0.981,
+    0.076
+   ],
+   "verts": 207,
+   "tris": 172,
+   "bytes": 8837,
+   "source": "KayKit Adventurers (CC0)"
+  },
+  {
+   "key": "wpn_melee_axe",
+   "file": "Weapons/wpn_melee_axe.expak",
+   "group": "kk",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "melee"
+   ],
+   "size": [
+    0.714,
+    1.244,
+    0.185
+   ],
+   "min": [
+    -0.125,
+    -0.273,
+    -0.092
+   ],
+   "max": [
+    0.589,
+    0.971,
+    0.092
+   ],
+   "verts": 340,
+   "tris": 274,
+   "bytes": 14313,
+   "source": "KayKit Adventurers (CC0)"
+  },
+  {
+   "key": "wpn_melee_sword",
+   "file": "Weapons/wpn_melee_sword.expak",
+   "group": "kk",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "melee"
+   ],
+   "size": [
+    0.503,
+    1.775,
+    0.131
+   ],
+   "min": [
+    -0.252,
+    -0.366,
+    -0.065
+   ],
+   "max": [
+    0.252,
+    1.409,
+    0.065
+   ],
+   "verts": 358,
+   "tris": 300,
+   "bytes": 15205,
+   "source": "KayKit Adventurers (CC0)"
+  },
+  {
+   "key": "wpn_launcher",
+   "file": "Weapons/wpn_launcher.expak",
+   "group": "kf",
+   "category": "weapon",
+   "tags": [
+    "weapon",
+    "launcher"
+   ],
+   "size": [
+    0.788,
+    0.85,
+    1.88
+   ],
+   "min": [
+    -0.394,
+    -0.0,
+    -0.7
+   ],
+   "max": [
+    0.394,
+    0.85,
+    1.18
+   ],
+   "verts": 1230,
+   "tris": 700,
+   "bytes": 47903,
+   "source": "Kenney Starter Kit FPS (CC0)"
+  },
+  {
+   "key": "Operator_Assault",
+   "file": "Characters/Operator_Assault.expak",
+   "group": "kaykit_characters",
+   "category": "character",
+   "tags": [
+    "character",
+    "assault"
+   ],
+   "size": [
+    0,
+    0,
+    0
+   ],
+   "verts": 0,
+   "tris": 0,
+   "bytes": 408767,
+   "source": "KayKit Adventurers / Kenney (CC0)"
+  },
+  {
+   "key": "Operator_Heavy",
+   "file": "Characters/Operator_Heavy.expak",
+   "group": "kaykit_characters",
+   "category": "character",
+   "tags": [
+    "character",
+    "heavy"
+   ],
+   "size": [
+    0,
+    0,
+    0
+   ],
+   "verts": 0,
+   "tris": 0,
+   "bytes": 395571,
+   "source": "KayKit Adventurers / Kenney (CC0)"
+  },
+  {
+   "key": "Operator_Scout",
+   "file": "Characters/Operator_Scout.expak",
+   "group": "kaykit_characters",
+   "category": "character",
+   "tags": [
+    "character",
+    "scout"
+   ],
+   "size": [
+    0,
+    0,
+    0
+   ],
+   "verts": 0,
+   "tris": 0,
+   "bytes": 403511,
+   "source": "KayKit Adventurers / Kenney (CC0)"
+  },
+  {
+   "key": "Operator_Ghost",
+   "file": "Characters/Operator_Ghost.expak",
+   "group": "kaykit_characters",
+   "category": "character",
+   "tags": [
+    "character",
+    "ghost"
+   ],
+   "size": [
+    0,
+    0,
+    0
+   ],
+   "verts": 0,
+   "tris": 0,
+   "bytes": 389327,
+   "source": "KayKit Adventurers / Kenney (CC0)"
+  },
+  {
+   "key": "Operator_Tech",
+   "file": "Characters/Operator_Tech.expak",
+   "group": "kaykit_characters",
+   "category": "character",
+   "tags": [
+    "character",
+    "tech"
+   ],
+   "size": [
+    0,
+    0,
+    0
+   ],
+   "verts": 0,
+   "tris": 0,
+   "bytes": 394981,
+   "source": "KayKit Adventurers / Kenney (CC0)"
+  },
+  {
+   "key": "Operator_Recruit",
+   "file": "Characters/Operator_Recruit.expak",
+   "group": "kaykit_characters",
+   "category": "character",
+   "tags": [
+    "character",
+    "recruit"
+   ],
+   "size": [
+    0,
+    0,
+    0
+   ],
+   "verts": 0,
+   "tris": 0,
+   "bytes": 63087,
+   "source": "KayKit Adventurers / Kenney (CC0)"
+  },
+  {
+   "key": "sb_basemodule_a",
+   "file": "Props/sb_basemodule_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "module",
+    "building",
+    "room"
+   ],
+   "size": [
+    2.248,
+    1.0,
+    2.176
+   ],
+   "min": [
+    -1.072,
+    -0.0,
+    -1.0
+   ],
+   "max": [
+    1.176,
+    1.0,
+    1.176
+   ],
+   "verts": 1004,
+   "tris": 586,
+   "bytes": 39307,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_basemodule_b",
+   "file": "Props/sb_basemodule_b.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "module",
+    "building",
+    "room"
+   ],
+   "size": [
+    2.079,
+    1.0,
+    2.317
+   ],
+   "min": [
+    -1.04,
+    0.0,
+    -1.111
+   ],
+   "max": [
+    1.04,
+    1.0,
+    1.206
+   ],
+   "verts": 1100,
+   "tris": 620,
+   "bytes": 42787,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_basemodule_c",
+   "file": "Props/sb_basemodule_c.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "module",
+    "building",
+    "room"
+   ],
+   "size": [
+    2.0,
+    1.0,
+    2.206
+   ],
+   "min": [
+    -1.0,
+    0.0,
+    -1.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    1.206
+   ],
+   "verts": 1096,
+   "tris": 644,
+   "bytes": 42947,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_basemodule_garage",
+   "file": "Props/sb_basemodule_garage.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "module",
+    "building",
+    "garage"
+   ],
+   "size": [
+    2.0,
+    1.0,
+    2.374
+   ],
+   "min": [
+    -1.0,
+    -0.0,
+    -1.096
+   ],
+   "max": [
+    1.0,
+    1.0,
+    1.278
+   ],
+   "verts": 1202,
+   "tris": 710,
+   "bytes": 47136,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_roofmodule_base",
+   "file": "Props/sb_roofmodule_base.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "roof",
+    "module"
+   ],
+   "size": [
+    1.395,
+    0.2,
+    1.395
+   ],
+   "min": [
+    -0.698,
+    -0.1,
+    -0.698
+   ],
+   "max": [
+    0.698,
+    0.1,
+    0.698
+   ],
+   "verts": 84,
+   "tris": 48,
+   "bytes": 3414,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_roofmodule_cargo_a",
+   "file": "Props/sb_roofmodule_cargo_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "roof",
+    "module",
+    "cargo"
+   ],
+   "size": [
+    1.395,
+    0.72,
+    1.395
+   ],
+   "min": [
+    -0.698,
+    -0.1,
+    -0.698
+   ],
+   "max": [
+    0.698,
+    0.62,
+    0.698
+   ],
+   "verts": 1124,
+   "tris": 784,
+   "bytes": 45529,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_cargo_a",
+   "file": "Props/sb_cargo_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "cargo",
+    "loot"
+   ],
+   "size": [
+    0.5,
+    0.52,
+    0.52
+   ],
+   "min": [
+    -0.25,
+    0.0,
+    -0.26
+   ],
+   "max": [
+    0.25,
+    0.52,
+    0.26
+   ],
+   "verts": 192,
+   "tris": 128,
+   "bytes": 7822,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_cargo_b",
+   "file": "Props/sb_cargo_b.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "cargo",
+    "loot"
+   ],
+   "size": [
+    0.5,
+    0.52,
+    0.52
+   ],
+   "min": [
+    -0.25,
+    0.0,
+    -0.26
+   ],
+   "max": [
+    0.25,
+    0.52,
+    0.26
+   ],
+   "verts": 192,
+   "tris": 128,
+   "bytes": 7822,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_cargo_a_stacked",
+   "file": "Props/sb_cargo_a_stacked.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "cargo",
+    "stack"
+   ],
+   "size": [
+    1.02,
+    1.021,
+    1.02
+   ],
+   "min": [
+    -0.51,
+    -0.01,
+    -0.51
+   ],
+   "max": [
+    0.51,
+    1.01,
+    0.51
+   ],
+   "verts": 800,
+   "tris": 488,
+   "bytes": 31606,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_cargo_a_packed",
+   "file": "Props/sb_cargo_a_packed.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "cargo",
+    "loot"
+   ],
+   "size": [
+    0.52,
+    0.53,
+    0.52
+   ],
+   "min": [
+    -0.26,
+    -0.01,
+    -0.26
+   ],
+   "max": [
+    0.26,
+    0.52,
+    0.26
+   ],
+   "verts": 256,
+   "tris": 176,
+   "bytes": 10453,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_cargodepot_a",
+   "file": "Props/sb_cargodepot_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "cargo",
+    "depot"
+   ],
+   "size": [
+    2.072,
+    1.12,
+    2.082
+   ],
+   "min": [
+    -1.0,
+    -0.0,
+    -1.072
+   ],
+   "max": [
+    1.072,
+    1.12,
+    1.01
+   ],
+   "verts": 1476,
+   "tris": 924,
+   "bytes": 58467,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_cargodepot_b",
+   "file": "Props/sb_cargodepot_b.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "cargo",
+    "depot"
+   ],
+   "size": [
+    2.083,
+    1.02,
+    2.178
+   ],
+   "min": [
+    -1.01,
+    0.0,
+    -1.106
+   ],
+   "max": [
+    1.072,
+    1.02,
+    1.072
+   ],
+   "verts": 1555,
+   "tris": 966,
+   "bytes": 61499,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_containers_a",
+   "file": "Props/sb_containers_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "container",
+    "crate",
+    "loot"
+   ],
+   "size": [
+    0.5,
+    0.2,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    -0.002,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    0.198,
+    0.25
+   ],
+   "verts": 392,
+   "tris": 280,
+   "bytes": 16051,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_containers_b",
+   "file": "Props/sb_containers_b.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "container",
+    "crate",
+    "loot"
+   ],
+   "size": [
+    0.5,
+    0.2,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    -0.002,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    0.198,
+    0.25
+   ],
+   "verts": 392,
+   "tris": 280,
+   "bytes": 16051,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_containers_c",
+   "file": "Props/sb_containers_c.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "container",
+    "crate",
+    "loot"
+   ],
+   "size": [
+    0.5,
+    0.2,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    -0.002,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    0.198,
+    0.25
+   ],
+   "verts": 392,
+   "tris": 280,
+   "bytes": 16051,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_containers_d",
+   "file": "Props/sb_containers_d.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "container",
+    "crate",
+    "loot"
+   ],
+   "size": [
+    0.5,
+    0.2,
+    0.5
+   ],
+   "min": [
+    -0.25,
+    -0.002,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    0.198,
+    0.25
+   ],
+   "verts": 392,
+   "tris": 280,
+   "bytes": 16051,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_structure_low",
+   "file": "Props/sb_structure_low.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "structure",
+    "wall",
+    "building"
+   ],
+   "size": [
+    1.75,
+    1.0,
+    1.75
+   ],
+   "min": [
+    -0.875,
+    0.0,
+    -0.875
+   ],
+   "max": [
+    0.875,
+    1.0,
+    0.875
+   ],
+   "verts": 712,
+   "tris": 422,
+   "bytes": 27996,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_structure_tall",
+   "file": "Props/sb_structure_tall.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "structure",
+    "wall",
+    "building"
+   ],
+   "size": [
+    1.75,
+    2.0,
+    1.75
+   ],
+   "min": [
+    -0.875,
+    0.0,
+    -0.875
+   ],
+   "max": [
+    0.875,
+    2.0,
+    0.875
+   ],
+   "verts": 1138,
+   "tris": 670,
+   "bytes": 44605,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_tunnel_straight_a",
+   "file": "Props/sb_tunnel_straight_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "tunnel",
+    "wall",
+    "corridor"
+   ],
+   "size": [
+    2.0,
+    0.6,
+    0.93
+   ],
+   "min": [
+    -1.0,
+    0.2,
+    -0.465
+   ],
+   "max": [
+    1.0,
+    0.8,
+    0.465
+   ],
+   "verts": 1040,
+   "tris": 608,
+   "bytes": 40728,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_tunnel_diagonal_long_a",
+   "file": "Props/sb_tunnel_diagonal_long_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "tunnel",
+    "wall",
+    "corridor"
+   ],
+   "size": [
+    2.939,
+    0.6,
+    2.939
+   ],
+   "min": [
+    -1.47,
+    0.2,
+    -1.47
+   ],
+   "max": [
+    1.47,
+    0.8,
+    1.47
+   ],
+   "verts": 1072,
+   "tris": 608,
+   "bytes": 41757,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_terrain_low",
+   "file": "Props/sb_terrain_low.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "terrain",
+    "ground"
+   ],
+   "size": [
+    2.0,
+    1.0,
+    2.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "max": [
+    1.0,
+    0.0,
+    1.0
+   ],
+   "verts": 24,
+   "tris": 12,
+   "bytes": 1058,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_terrain_mining",
+   "file": "Props/sb_terrain_mining.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "terrain",
+    "ground"
+   ],
+   "size": [
+    2.0,
+    2.073,
+    2.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "max": [
+    1.0,
+    1.073,
+    1.0
+   ],
+   "verts": 124,
+   "tris": 76,
+   "bytes": 5029,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_rock_a",
+   "file": "Props/sb_rock_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "rock",
+    "nature"
+   ],
+   "size": [
+    0.533,
+    0.25,
+    0.5
+   ],
+   "min": [
+    -0.317,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    0.217,
+    0.25,
+    0.25
+   ],
+   "verts": 48,
+   "tris": 30,
+   "bytes": 2037,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_rocks_a",
+   "file": "Props/sb_rocks_a.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "rock",
+    "nature"
+   ],
+   "size": [
+    1.314,
+    0.354,
+    1.643
+   ],
+   "min": [
+    -0.524,
+    0.0,
+    -0.822
+   ],
+   "max": [
+    0.79,
+    0.354,
+    0.821
+   ],
+   "verts": 146,
+   "tris": 88,
+   "bytes": 5870,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_solarpanel",
+   "file": "Props/sb_solarpanel.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "panel",
+    "prop"
+   ],
+   "size": [
+    0.9,
+    0.371,
+    0.45
+   ],
+   "min": [
+    -0.45,
+    -0.0,
+    -0.225
+   ],
+   "max": [
+    0.45,
+    0.371,
+    0.225
+   ],
+   "verts": 186,
+   "tris": 118,
+   "bytes": 7513,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_lights",
+   "file": "Props/sb_lights.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "light",
+    "prop"
+   ],
+   "size": [
+    0.68,
+    0.998,
+    0.68
+   ],
+   "min": [
+    -0.34,
+    -0.0,
+    -0.34
+   ],
+   "max": [
+    0.34,
+    0.998,
+    0.34
+   ],
+   "verts": 504,
+   "tris": 356,
+   "bytes": 20541,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_drill_structure",
+   "file": "Props/sb_drill_structure.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "structure",
+    "machine",
+    "prop"
+   ],
+   "size": [
+    1.75,
+    2.0,
+    1.75
+   ],
+   "min": [
+    -0.875,
+    0.0,
+    -0.875
+   ],
+   "max": [
+    0.875,
+    2.0,
+    0.875
+   ],
+   "verts": 1266,
+   "tris": 798,
+   "bytes": 50238,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_landingpad_small",
+   "file": "Props/sb_landingpad_small.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "pad",
+    "ground"
+   ],
+   "size": [
+    1.9,
+    0.5,
+    1.9
+   ],
+   "min": [
+    -0.95,
+    -0.0,
+    -0.95
+   ],
+   "max": [
+    0.95,
+    0.5,
+    0.95
+   ],
+   "verts": 690,
+   "tris": 454,
+   "bytes": 27679,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall_target",
+   "file": "Props/pb_wall_target.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "target",
+    "wall",
+    "range"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    0.991
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.741
+   ],
+   "verts": 237,
+   "tris": 126,
+   "bytes": 9246,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_target_small",
+   "file": "Props/pb_target_small.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "target",
+    "range",
+    "small"
+   ],
+   "size": [
+    0.5,
+    1.1,
+    0.15
+   ],
+   "min": [
+    -0.25,
+    -0.0,
+    -0.0
+   ],
+   "max": [
+    0.25,
+    1.1,
+    0.15
+   ],
+   "verts": 194,
+   "tris": 132,
+   "bytes": 7943,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_target_stand_a",
+   "file": "Props/pb_target_stand_a.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "target",
+    "range",
+    "stand"
+   ],
+   "size": [
+    1.0,
+    2.0,
+    1.5
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -1.1
+   ],
+   "max": [
+    0.5,
+    2.0,
+    0.4
+   ],
+   "verts": 398,
+   "tris": 208,
+   "bytes": 15385,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall_decorated",
+   "file": "Props/pb_wall_decorated.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "interior",
+    "decorated"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    0.913
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.663
+   ],
+   "verts": 364,
+   "tris": 288,
+   "bytes": 15257,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_primitive_wall",
+   "file": "Props/pb_primitive_wall.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "primitive"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.5
+   ],
+   "verts": 24,
+   "tris": 12,
+   "bytes": 1065,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_primitive_doorway",
+   "file": "Props/pb_primitive_doorway.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "doorway",
+    "primitive"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.5
+   ],
+   "verts": 48,
+   "tris": 28,
+   "bytes": 2028,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_primitive_window",
+   "file": "Props/pb_primitive_window.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "window",
+    "primitive"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.5
+   ],
+   "verts": 48,
+   "tris": 32,
+   "bytes": 2075,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_primitive_cube",
+   "file": "Props/pb_primitive_cube.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "block",
+    "primitive"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    4.0,
+    2.0
+   ],
+   "verts": 24,
+   "tris": 12,
+   "bytes": 1065,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_shelf_small_candles",
+   "file": "Props/dg_shelf_small_candles.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "shelf",
+    "light",
+    "furniture"
+   ],
+   "size": [
+    1.0,
+    0.994,
+    0.5
+   ],
+   "min": [
+    -0.5,
+    -0.3,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.694,
+    0.5
+   ],
+   "verts": 329,
+   "tris": 231,
+   "bytes": 13452,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_torch_mounted",
+   "file": "Props/dg_torch_mounted.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "light",
+    "wall"
+   ],
+   "size": [
+    0.55,
+    1.062,
+    0.616
+   ],
+   "min": [
+    -0.275,
+    -0.381,
+    -0.0
+   ],
+   "max": [
+    0.275,
+    0.682,
+    0.616
+   ],
+   "verts": 388,
+   "tris": 278,
+   "bytes": 15898,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_bed_floor",
+   "file": "Props/dg_bed_floor.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "bed",
+    "furniture"
+   ],
+   "size": [
+    1.5,
+    0.563,
+    3.0
+   ],
+   "min": [
+    -0.75,
+    0.0,
+    -1.5
+   ],
+   "max": [
+    0.75,
+    0.563,
+    1.5
+   ],
+   "verts": 192,
+   "tris": 232,
+   "bytes": 9070,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_wall_shelves",
+   "file": "Props/dg_wall_shelves.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "shelf",
+    "wall",
+    "storage"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.368
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.868
+   ],
+   "verts": 2837,
+   "tris": 1582,
+   "bytes": 109913,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_box_stacked",
+   "file": "Props/dg_box_stacked.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "box",
+    "stack"
+   ],
+   "size": [
+    3.475,
+    3.309,
+    3.635
+   ],
+   "min": [
+    -1.725,
+    0.0,
+    -1.773
+   ],
+   "max": [
+    1.75,
+    3.309,
+    1.861
+   ],
+   "verts": 3394,
+   "tris": 2173,
+   "bytes": 134828,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "ka_weapon_sword",
+   "file": "Props/ka_weapon_sword.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "melee",
+    "prop"
+   ],
+   "size": [
+    0.208,
+    0.501,
+    0.06
+   ],
+   "min": [
+    -0.104,
+    -0.4,
+    -0.03
+   ],
+   "max": [
+    0.104,
+    0.101,
+    0.03
+   ],
+   "verts": 150,
+   "tris": 80,
+   "bytes": 5910,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "sb_landingpad_large",
+   "file": "Props/sb_landingpad_large.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "pad",
+    "ground"
+   ],
+   "size": [
+    2.5,
+    0.5,
+    2.5
+   ],
+   "min": [
+    -1.25,
+    -0.0,
+    -1.25
+   ],
+   "max": [
+    1.25,
+    0.5,
+    1.25
+   ],
+   "verts": 714,
+   "tris": 478,
+   "bytes": 28735,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_spacetruck",
+   "file": "Props/sb_spacetruck.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "vehicle",
+    "prop",
+    "cover"
+   ],
+   "size": [
+    0.489,
+    0.477,
+    0.893
+   ],
+   "min": [
+    -0.245,
+    0.011,
+    -0.446
+   ],
+   "max": [
+    0.245,
+    0.488,
+    0.448
+   ],
+   "verts": 805,
+   "tris": 542,
+   "bytes": 32409,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_spacetruck_large",
+   "file": "Props/sb_spacetruck_large.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "vehicle",
+    "prop",
+    "cover"
+   ],
+   "size": [
+    0.489,
+    0.563,
+    1.028
+   ],
+   "min": [
+    -0.245,
+    -0.011,
+    -0.572
+   ],
+   "max": [
+    0.245,
+    0.552,
+    0.456
+   ],
+   "verts": 1311,
+   "tris": 858,
+   "bytes": 52399,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_basemodule_d",
+   "file": "Props/sb_basemodule_d.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "module",
+    "building",
+    "room"
+   ],
+   "size": [
+    2.444,
+    1.0,
+    2.144
+   ],
+   "min": [
+    -1.222,
+    0.0,
+    -1.072
+   ],
+   "max": [
+    1.222,
+    1.0,
+    1.072
+   ],
+   "verts": 1392,
+   "tris": 780,
+   "bytes": 54051,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_basemodule_e",
+   "file": "Props/sb_basemodule_e.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "module",
+    "building",
+    "room"
+   ],
+   "size": [
+    2.222,
+    1.65,
+    2.278
+   ],
+   "min": [
+    -1.111,
+    0.0,
+    -1.072
+   ],
+   "max": [
+    1.111,
+    1.65,
+    1.206
+   ],
+   "verts": 1296,
+   "tris": 732,
+   "bytes": 50403,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "sb_roofmodule_cargo_b",
+   "file": "Props/sb_roofmodule_cargo_b.expak",
+   "group": "sb",
+   "category": "prop",
+   "tags": [
+    "roof",
+    "module",
+    "cargo"
+   ],
+   "size": [
+    1.395,
+    1.22,
+    1.395
+   ],
+   "min": [
+    -0.698,
+    -0.1,
+    -0.698
+   ],
+   "max": [
+    0.698,
+    1.12,
+    0.698
+   ],
+   "verts": 1116,
+   "tris": 760,
+   "bytes": 44985,
+   "source": "KayKit Space Base Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall",
+   "file": "Props/pb_wall.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    0.53
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.28
+   ],
+   "verts": 184,
+   "tris": 96,
+   "bytes": 7183,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall_half",
+   "file": "Props/pb_wall_half.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "interior"
+   ],
+   "size": [
+    2.0,
+    4.0,
+    0.53
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    0.0,
+    4.0,
+    0.28
+   ],
+   "verts": 160,
+   "tris": 84,
+   "bytes": 6276,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall_doorway",
+   "file": "Props/pb_wall_doorway.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "door",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    0.53
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.28
+   ],
+   "verts": 304,
+   "tris": 178,
+   "bytes": 12015,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall_window_closed",
+   "file": "Props/pb_wall_window_closed.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "window",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    0.53
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.28
+   ],
+   "verts": 328,
+   "tris": 220,
+   "bytes": 13293,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_wall_window_open",
+   "file": "Props/pb_wall_window_open.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "window",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    0.53
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.28
+   ],
+   "verts": 304,
+   "tris": 208,
+   "bytes": 12379,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_floor",
+   "file": "Props/pb_floor.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    0.5,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    0.5,
+    2.0
+   ],
+   "verts": 80,
+   "tris": 52,
+   "bytes": 3328,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_floor_prototype",
+   "file": "Props/pb_floor_prototype.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    0.5,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    0.5,
+    2.0
+   ],
+   "verts": 40,
+   "tris": 20,
+   "bytes": 1674,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_door_a",
+   "file": "Props/pb_door_a.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "door",
+    "interior"
+   ],
+   "size": [
+    1.6,
+    2.8,
+    0.546
+   ],
+   "min": [
+    -1.6,
+    0.0,
+    -0.273
+   ],
+   "max": [
+    -0.0,
+    2.8,
+    0.273
+   ],
+   "verts": 386,
+   "tris": 296,
+   "bytes": 16049,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_door_b",
+   "file": "Props/pb_door_b.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "door",
+    "interior"
+   ],
+   "size": [
+    1.6,
+    2.8,
+    0.536
+   ],
+   "min": [
+    -1.6,
+    0.0,
+    -0.15
+   ],
+   "max": [
+    -0.0,
+    2.8,
+    0.386
+   ],
+   "verts": 291,
+   "tris": 167,
+   "bytes": 11461,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_pillar_a",
+   "file": "Props/pb_pillar_a.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "pillar",
+    "interior"
+   ],
+   "size": [
+    0.6,
+    4.1,
+    0.6
+   ],
+   "min": [
+    -0.3,
+    0.0,
+    -0.3
+   ],
+   "max": [
+    0.3,
+    4.1,
+    0.3
+   ],
+   "verts": 88,
+   "tris": 44,
+   "bytes": 3491,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_pillar_b",
+   "file": "Props/pb_pillar_b.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "pillar",
+    "interior"
+   ],
+   "size": [
+    1.0,
+    4.1,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    4.1,
+    0.5
+   ],
+   "verts": 88,
+   "tris": 44,
+   "bytes": 3491,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_beam",
+   "file": "Props/pb_beam.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "beam",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    1.0,
+    0.5
+   ],
+   "verts": 24,
+   "tris": 12,
+   "bytes": 1055,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_cube",
+   "file": "Props/pb_cube.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "block",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    4.0,
+    2.0
+   ],
+   "verts": 24,
+   "tris": 12,
+   "bytes": 1055,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_stairs",
+   "file": "Props/pb_stairs.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "stairs",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    4.0,
+    2.0
+   ],
+   "verts": 112,
+   "tris": 68,
+   "bytes": 4545,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_slope",
+   "file": "Props/pb_slope.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "ramp",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    4.0,
+    2.0
+   ],
+   "verts": 18,
+   "tris": 8,
+   "bytes": 816,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_box_a",
+   "file": "Props/pb_box_a.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "box",
+    "loot"
+   ],
+   "size": [
+    0.456,
+    0.509,
+    0.463
+   ],
+   "min": [
+    -0.228,
+    -0.0,
+    -0.228
+   ],
+   "max": [
+    0.228,
+    0.509,
+    0.235
+   ],
+   "verts": 112,
+   "tris": 56,
+   "bytes": 4400,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_box_b",
+   "file": "Props/pb_box_b.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "box",
+    "loot"
+   ],
+   "size": [
+    0.6,
+    0.402,
+    0.406
+   ],
+   "min": [
+    -0.3,
+    -0.0,
+    -0.2
+   ],
+   "max": [
+    0.3,
+    0.402,
+    0.206
+   ],
+   "verts": 168,
+   "tris": 80,
+   "bytes": 6480,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_box_c",
+   "file": "Props/pb_box_c.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "box",
+    "loot"
+   ],
+   "size": [
+    0.8,
+    0.402,
+    0.606
+   ],
+   "min": [
+    -0.4,
+    -0.0,
+    -0.3
+   ],
+   "max": [
+    0.4,
+    0.402,
+    0.306
+   ],
+   "verts": 204,
+   "tris": 98,
+   "bytes": 7848,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_barrel_a",
+   "file": "Props/pb_barrel_a.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "barrel",
+    "loot"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "verts": 386,
+   "tris": 384,
+   "bytes": 17107,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_barrel_b",
+   "file": "Props/pb_barrel_b.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "barrel",
+    "loot"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "verts": 386,
+   "tris": 384,
+   "bytes": 17107,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_barrel_c",
+   "file": "Props/pb_barrel_c.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "barrel",
+    "loot"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    -0.5,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "verts": 386,
+   "tris": 384,
+   "bytes": 17107,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_can_a",
+   "file": "Props/pb_can_a.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "can",
+    "loot",
+    "small"
+   ],
+   "size": [
+    0.3,
+    0.482,
+    0.3
+   ],
+   "min": [
+    -0.15,
+    -0.0,
+    -0.15
+   ],
+   "max": [
+    0.15,
+    0.482,
+    0.15
+   ],
+   "verts": 236,
+   "tris": 208,
+   "bytes": 10192,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_pallet_large",
+   "file": "Props/pb_pallet_large.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "pallet",
+    "prop"
+   ],
+   "size": [
+    4.0,
+    0.5,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    -0.0,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    0.5,
+    2.0
+   ],
+   "verts": 264,
+   "tris": 132,
+   "bytes": 10183,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_pallet_small",
+   "file": "Props/pb_pallet_small.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "pallet",
+    "prop"
+   ],
+   "size": [
+    2.0,
+    0.5,
+    2.0
+   ],
+   "min": [
+    -1.0,
+    -0.0,
+    -1.0
+   ],
+   "max": [
+    1.0,
+    0.5,
+    1.0
+   ],
+   "verts": 264,
+   "tris": 132,
+   "bytes": 10183,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_table_medium",
+   "file": "Props/pb_table_medium.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "table",
+    "furniture"
+   ],
+   "size": [
+    2.0,
+    0.8,
+    1.5
+   ],
+   "min": [
+    -1.0,
+    -0.0,
+    -0.75
+   ],
+   "max": [
+    1.0,
+    0.8,
+    0.75
+   ],
+   "verts": 236,
+   "tris": 152,
+   "bytes": 9527,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "pb_table_long",
+   "file": "Props/pb_table_long.expak",
+   "group": "pb",
+   "category": "prop",
+   "tags": [
+    "table",
+    "furniture"
+   ],
+   "size": [
+    3.0,
+    1.0,
+    1.5
+   ],
+   "min": [
+    -1.5,
+    -0.0,
+    -0.75
+   ],
+   "max": [
+    1.5,
+    1.0,
+    0.75
+   ],
+   "verts": 236,
+   "tris": 152,
+   "bytes": 9525,
+   "source": "KayKit Prototype Bits (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_chest",
+   "file": "Props/dg_chest.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "chest",
+    "loot",
+    "storage"
+   ],
+   "size": [
+    1.6,
+    0.6,
+    1.246
+   ],
+   "min": [
+    -0.8,
+    -0.0,
+    -0.6
+   ],
+   "max": [
+    0.8,
+    0.6,
+    0.646
+   ],
+   "verts": 430,
+   "tris": 266,
+   "bytes": 17090,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_chest_gold",
+   "file": "Props/dg_chest_gold.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "chest",
+    "loot",
+    "rare"
+   ],
+   "size": [
+    1.6,
+    1.041,
+    1.246
+   ],
+   "min": [
+    -0.8,
+    -0.0,
+    -0.6
+   ],
+   "max": [
+    0.8,
+    1.041,
+    0.646
+   ],
+   "verts": 1508,
+   "tris": 1106,
+   "bytes": 61671,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_box_small",
+   "file": "Props/dg_box_small.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "box",
+    "loot"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.5
+   ],
+   "verts": 320,
+   "tris": 188,
+   "bytes": 12638,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_box_large",
+   "file": "Props/dg_box_large.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "box",
+    "loot"
+   ],
+   "size": [
+    1.5,
+    1.5,
+    1.5
+   ],
+   "min": [
+    -0.75,
+    0.0,
+    -0.75
+   ],
+   "max": [
+    0.75,
+    1.5,
+    0.75
+   ],
+   "verts": 320,
+   "tris": 188,
+   "bytes": 12638,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_crates_stacked",
+   "file": "Props/dg_crates_stacked.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "crate",
+    "stack",
+    "loot"
+   ],
+   "size": [
+    2.089,
+    2.142,
+    2.249
+   ],
+   "min": [
+    -0.999,
+    -0.0,
+    -1.157
+   ],
+   "max": [
+    1.09,
+    2.142,
+    1.092
+   ],
+   "verts": 2246,
+   "tris": 1331,
+   "bytes": 87991,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_barrel_large",
+   "file": "Props/dg_barrel_large.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "barrel",
+    "loot"
+   ],
+   "size": [
+    1.8,
+    2.0,
+    1.8
+   ],
+   "min": [
+    -0.9,
+    0.0,
+    -0.9
+   ],
+   "max": [
+    0.9,
+    2.0,
+    0.9
+   ],
+   "verts": 694,
+   "tris": 561,
+   "bytes": 29085,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_barrel_small",
+   "file": "Props/dg_barrel_small.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "barrel",
+    "loot"
+   ],
+   "size": [
+    1.001,
+    1.018,
+    1.001
+   ],
+   "min": [
+    -0.501,
+    -0.0,
+    -0.501
+   ],
+   "max": [
+    0.501,
+    1.018,
+    0.501
+   ],
+   "verts": 400,
+   "tris": 207,
+   "bytes": 15429,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_trunk_small",
+   "file": "Props/dg_trunk_small.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "container",
+    "loot",
+    "storage"
+   ],
+   "size": [
+    0.675,
+    0.484,
+    0.583
+   ],
+   "min": [
+    -0.338,
+    -0.0,
+    -0.292
+   ],
+   "max": [
+    0.338,
+    0.484,
+    0.292
+   ],
+   "verts": 358,
+   "tris": 204,
+   "bytes": 14048,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_trunk_medium",
+   "file": "Props/dg_trunk_medium.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "container",
+    "loot",
+    "storage"
+   ],
+   "size": [
+    0.953,
+    0.726,
+    0.875
+   ],
+   "min": [
+    -0.477,
+    -0.0,
+    -0.438
+   ],
+   "max": [
+    0.477,
+    0.726,
+    0.438
+   ],
+   "verts": 254,
+   "tris": 148,
+   "bytes": 10049,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_trunk_large",
+   "file": "Props/dg_trunk_large.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "container",
+    "loot",
+    "storage"
+   ],
+   "size": [
+    1.5,
+    1.0,
+    1.3
+   ],
+   "min": [
+    -0.75,
+    -0.0,
+    -0.65
+   ],
+   "max": [
+    0.75,
+    1.0,
+    0.65
+   ],
+   "verts": 358,
+   "tris": 204,
+   "bytes": 14048,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_shelf_large",
+   "file": "Props/dg_shelf_large.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "shelf",
+    "storage",
+    "furniture"
+   ],
+   "size": [
+    2.0,
+    0.45,
+    0.5
+   ],
+   "min": [
+    -1.0,
+    -0.35,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    0.5
+   ],
+   "verts": 142,
+   "tris": 76,
+   "bytes": 5600,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_shelf_small",
+   "file": "Props/dg_shelf_small.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "shelf",
+    "storage",
+    "furniture"
+   ],
+   "size": [
+    1.0,
+    0.4,
+    0.5
+   ],
+   "min": [
+    -0.5,
+    -0.3,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.1,
+    0.5
+   ],
+   "verts": 110,
+   "tris": 60,
+   "bytes": 4384,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_bed_frame",
+   "file": "Props/dg_bed_frame.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "bed",
+    "furniture",
+    "rest"
+   ],
+   "size": [
+    1.5,
+    1.063,
+    3.0
+   ],
+   "min": [
+    -0.75,
+    0.0,
+    -1.5
+   ],
+   "max": [
+    0.75,
+    1.063,
+    1.5
+   ],
+   "verts": 332,
+   "tris": 304,
+   "bytes": 14414,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_bed_decorated",
+   "file": "Props/dg_bed_decorated.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "bed",
+    "furniture",
+    "rest"
+   ],
+   "size": [
+    2.606,
+    1.701,
+    3.057
+   ],
+   "min": [
+    -1.856,
+    0.0,
+    -1.557
+   ],
+   "max": [
+    0.75,
+    1.701,
+    1.5
+   ],
+   "verts": 1886,
+   "tris": 1410,
+   "bytes": 77418,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_table_small",
+   "file": "Props/dg_table_small.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "table",
+    "furniture"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.499,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.501,
+    1.0,
+    0.5
+   ],
+   "verts": 348,
+   "tris": 192,
+   "bytes": 13584,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_chair",
+   "file": "Props/dg_chair.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "chair",
+    "furniture"
+   ],
+   "size": [
+    0.75,
+    1.227,
+    0.75
+   ],
+   "min": [
+    -0.376,
+    0.0,
+    -0.375
+   ],
+   "max": [
+    0.374,
+    1.227,
+    0.375
+   ],
+   "verts": 506,
+   "tris": 294,
+   "bytes": 19858,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_stool",
+   "file": "Props/dg_stool.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "chair",
+    "furniture"
+   ],
+   "size": [
+    0.75,
+    0.5,
+    0.75
+   ],
+   "min": [
+    -0.376,
+    0.0,
+    -0.375
+   ],
+   "max": [
+    0.374,
+    0.5,
+    0.375
+   ],
+   "verts": 308,
+   "tris": 172,
+   "bytes": 12058,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_bottle_green",
+   "file": "Props/dg_bottle_green.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "bottle",
+    "loot",
+    "small"
+   ],
+   "size": [
+    0.368,
+    0.886,
+    0.368
+   ],
+   "min": [
+    -0.184,
+    0.0,
+    -0.184
+   ],
+   "max": [
+    0.184,
+    0.886,
+    0.184
+   ],
+   "verts": 206,
+   "tris": 144,
+   "bytes": 8465,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_bottle_brown",
+   "file": "Props/dg_bottle_brown.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "bottle",
+    "loot",
+    "small"
+   ],
+   "size": [
+    0.368,
+    0.886,
+    0.368
+   ],
+   "min": [
+    -0.184,
+    0.0,
+    -0.184
+   ],
+   "max": [
+    0.184,
+    0.886,
+    0.184
+   ],
+   "verts": 206,
+   "tris": 144,
+   "bytes": 8465,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_keg",
+   "file": "Props/dg_keg.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "barrel",
+    "prop"
+   ],
+   "size": [
+    1.8,
+    2.051,
+    2.0
+   ],
+   "min": [
+    -0.9,
+    0.0,
+    -0.976
+   ],
+   "max": [
+    0.9,
+    2.051,
+    1.024
+   ],
+   "verts": 1088,
+   "tris": 807,
+   "bytes": 44636,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_coin",
+   "file": "Props/dg_coin.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "coin",
+    "valuable",
+    "small"
+   ],
+   "size": [
+    0.36,
+    0.125,
+    0.36
+   ],
+   "min": [
+    -0.18,
+    -0.063,
+    -0.18
+   ],
+   "max": [
+    0.18,
+    0.063,
+    0.18
+   ],
+   "verts": 118,
+   "tris": 80,
+   "bytes": 4873,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_coin_stack",
+   "file": "Props/dg_coin_stack.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "coin",
+    "valuable",
+    "small"
+   ],
+   "size": [
+    0.959,
+    0.478,
+    0.896
+   ],
+   "min": [
+    -0.514,
+    -0.0,
+    -0.461
+   ],
+   "max": [
+    0.445,
+    0.478,
+    0.436
+   ],
+   "verts": 560,
+   "tris": 416,
+   "bytes": 23055,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_key",
+   "file": "Props/dg_key.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "key",
+    "quest",
+    "small"
+   ],
+   "size": [
+    0.896,
+    0.403,
+    0.142
+   ],
+   "min": [
+    -0.701,
+    -0.201,
+    -0.071
+   ],
+   "max": [
+    0.195,
+    0.201,
+    0.071
+   ],
+   "verts": 160,
+   "tris": 160,
+   "bytes": 7176,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_rubble",
+   "file": "Props/dg_rubble.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "rubble",
+    "debris"
+   ],
+   "size": [
+    8.129,
+    3.496,
+    3.183
+   ],
+   "min": [
+    -4.06,
+    0.0,
+    -1.586
+   ],
+   "max": [
+    4.069,
+    3.496,
+    1.597
+   ],
+   "verts": 1200,
+   "tris": 788,
+   "bytes": 47995,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_floor_tile",
+   "file": "Props/dg_floor_tile.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    0.15,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    -0.1,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    0.05,
+    2.0
+   ],
+   "verts": 272,
+   "tris": 188,
+   "bytes": 11103,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_floor_wood",
+   "file": "Props/dg_floor_wood.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    0.15,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    -0.1,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    0.05,
+    2.0
+   ],
+   "verts": 527,
+   "tris": 272,
+   "bytes": 20271,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_floor_dirt",
+   "file": "Props/dg_floor_dirt.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "ground"
+   ],
+   "size": [
+    4.0,
+    0.209,
+    4.0
+   ],
+   "min": [
+    -2.0,
+    -0.1,
+    -2.0
+   ],
+   "max": [
+    2.0,
+    0.109,
+    2.0
+   ],
+   "verts": 196,
+   "tris": 104,
+   "bytes": 7663,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_floor_weeds",
+   "file": "Props/dg_floor_weeds.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "garden",
+    "ground"
+   ],
+   "size": [
+    2.0,
+    0.295,
+    2.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    -1.0
+   ],
+   "max": [
+    1.0,
+    0.195,
+    1.0
+   ],
+   "verts": 724,
+   "tris": 589,
+   "bytes": 30380,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_wall",
+   "file": "Props/dg_wall.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.5
+   ],
+   "verts": 1008,
+   "tris": 494,
+   "bytes": 38321,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_wall_doorway",
+   "file": "Props/dg_wall_doorway.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "door",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.5
+   ],
+   "verts": 796,
+   "tris": 448,
+   "bytes": 30993,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_wall_window_open",
+   "file": "Props/dg_wall_window_open.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "window",
+    "interior"
+   ],
+   "size": [
+    4.0,
+    4.0,
+    1.0
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    0.5
+   ],
+   "verts": 1126,
+   "tris": 604,
+   "bytes": 43429,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_wall_corner",
+   "file": "Props/dg_wall_corner.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "interior"
+   ],
+   "size": [
+    2.5,
+    4.0,
+    2.5
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    2.0,
+    4.0,
+    2.0
+   ],
+   "verts": 886,
+   "tris": 443,
+   "bytes": 33812,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_column",
+   "file": "Props/dg_column.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "pillar",
+    "interior"
+   ],
+   "size": [
+    0.7,
+    1.4,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0.0,
+    -0.35
+   ],
+   "max": [
+    0.35,
+    1.4,
+    0.35
+   ],
+   "verts": 92,
+   "tris": 44,
+   "bytes": 3611,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_pillar",
+   "file": "Props/dg_pillar.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "pillar",
+    "interior"
+   ],
+   "size": [
+    1.5,
+    4.0,
+    1.5
+   ],
+   "min": [
+    -0.75,
+    0.0,
+    -0.75
+   ],
+   "max": [
+    0.75,
+    4.0,
+    0.75
+   ],
+   "verts": 241,
+   "tris": 136,
+   "bytes": 9483,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_stairs",
+   "file": "Props/dg_stairs.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "stairs",
+    "interior"
+   ],
+   "size": [
+    5.0,
+    5.1,
+    4.0
+   ],
+   "min": [
+    -2.5,
+    0.0,
+    -0.0
+   ],
+   "max": [
+    2.5,
+    5.1,
+    4.0
+   ],
+   "verts": 734,
+   "tris": 358,
+   "bytes": 27923,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_torch",
+   "file": "Props/dg_torch.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "light",
+    "prop"
+   ],
+   "size": [
+    0.55,
+    1.042,
+    0.55
+   ],
+   "min": [
+    -0.275,
+    -0.395,
+    -0.275
+   ],
+   "max": [
+    0.275,
+    0.647,
+    0.275
+   ],
+   "verts": 288,
+   "tris": 216,
+   "bytes": 11946,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_torch_lit",
+   "file": "Props/dg_torch_lit.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "light",
+    "prop"
+   ],
+   "size": [
+    0.55,
+    1.126,
+    0.55
+   ],
+   "min": [
+    -0.275,
+    -0.395,
+    -0.275
+   ],
+   "max": [
+    0.275,
+    0.731,
+    0.275
+   ],
+   "verts": 317,
+   "tris": 270,
+   "bytes": 13526,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_plate",
+   "file": "Props/dg_plate.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "plate",
+    "furniture",
+    "small"
+   ],
+   "size": [
+    0.971,
+    0.129,
+    0.971
+   ],
+   "min": [
+    -0.485,
+    0.0,
+    -0.486
+   ],
+   "max": [
+    0.485,
+    0.129,
+    0.485
+   ],
+   "verts": 135,
+   "tris": 120,
+   "bytes": 5898,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "dg_barrier",
+   "file": "Props/dg_barrier.expak",
+   "group": "dg",
+   "category": "prop",
+   "tags": [
+    "barrier",
+    "prop"
+   ],
+   "size": [
+    4.0,
+    1.1,
+    0.5
+   ],
+   "min": [
+    -2.0,
+    0.0,
+    -0.25
+   ],
+   "max": [
+    2.0,
+    1.1,
+    0.25
+   ],
+   "verts": 180,
+   "tris": 90,
+   "bytes": 6980,
+   "source": "KayKit Dungeon Remastered (CC0, Kay Lousberg)"
+  },
+  {
+   "key": "ka_wall",
+   "file": "Props/ka_wall.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    0.6
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.3
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.3
+   ],
+   "verts": 276,
+   "tris": 174,
+   "bytes": 11062,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_wall_corner",
+   "file": "Props/ka_wall_corner.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "arena"
+   ],
+   "size": [
+    0.8,
+    1.0,
+    0.8
+   ],
+   "min": [
+    -0.3,
+    -0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.3
+   ],
+   "verts": 402,
+   "tris": 226,
+   "bytes": 15725,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_wall_gate",
+   "file": "Props/ka_wall_gate.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "gate",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    0.6
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.3
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.3
+   ],
+   "verts": 550,
+   "tris": 322,
+   "bytes": 21611,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_block",
+   "file": "Props/ka_block.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "block",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    0.5,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "verts": 24,
+   "tris": 12,
+   "bytes": 1055,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_bricks",
+   "file": "Props/ka_bricks.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "block",
+    "arena"
+   ],
+   "size": [
+    0.772,
+    0.412,
+    0.847
+   ],
+   "min": [
+    -0.386,
+    0.0,
+    -0.423
+   ],
+   "max": [
+    0.386,
+    0.412,
+    0.423
+   ],
+   "verts": 228,
+   "tris": 120,
+   "bytes": 8880,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_column",
+   "file": "Props/ka_column.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "pillar",
+    "arena"
+   ],
+   "size": [
+    0.603,
+    1.0,
+    0.6
+   ],
+   "min": [
+    -0.302,
+    0.0,
+    -0.3
+   ],
+   "max": [
+    0.302,
+    1.0,
+    0.3
+   ],
+   "verts": 300,
+   "tris": 168,
+   "bytes": 11760,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_column_damaged",
+   "file": "Props/ka_column_damaged.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "pillar",
+    "rubble",
+    "arena"
+   ],
+   "size": [
+    0.6,
+    0.716,
+    0.6
+   ],
+   "min": [
+    -0.3,
+    0.0,
+    -0.3
+   ],
+   "max": [
+    0.3,
+    0.716,
+    0.3
+   ],
+   "verts": 252,
+   "tris": 148,
+   "bytes": 9992,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_floor",
+   "file": "Props/ka_floor.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    0.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.0,
+    0.5
+   ],
+   "verts": 4,
+   "tris": 2,
+   "bytes": 295,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_floor_detail",
+   "file": "Props/ka_floor_detail.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "floor",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    0.07,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.07,
+    0.5
+   ],
+   "verts": 94,
+   "tris": 50,
+   "bytes": 3758,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_stairs",
+   "file": "Props/ka_stairs.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "stairs",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    0.5,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "verts": 72,
+   "tris": 44,
+   "bytes": 2976,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_trophy",
+   "file": "Props/ka_trophy.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "trophy",
+    "quest",
+    "prop"
+   ],
+   "size": [
+    0.569,
+    0.477,
+    0.452
+   ],
+   "min": [
+    -0.285,
+    0.0,
+    -0.226
+   ],
+   "max": [
+    0.285,
+    0.477,
+    0.226
+   ],
+   "verts": 428,
+   "tris": 244,
+   "bytes": 16768,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_weapon_rack",
+   "file": "Props/ka_weapon_rack.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "rack",
+    "hideout",
+    "storage"
+   ],
+   "size": [
+    0.72,
+    0.467,
+    0.3
+   ],
+   "min": [
+    -0.36,
+    0.0,
+    -0.15
+   ],
+   "max": [
+    0.36,
+    0.467,
+    0.15
+   ],
+   "verts": 344,
+   "tris": 212,
+   "bytes": 13701,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_weapon_spear",
+   "file": "Props/ka_weapon_spear.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "melee",
+    "prop"
+   ],
+   "size": [
+    0.146,
+    0.7,
+    0.119
+   ],
+   "min": [
+    -0.073,
+    0.0,
+    -0.06
+   ],
+   "max": [
+    0.073,
+    0.7,
+    0.06
+   ],
+   "verts": 108,
+   "tris": 58,
+   "bytes": 4302,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_banner",
+   "file": "Props/ka_banner.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "banner",
+    "decor"
+   ],
+   "size": [
+    0.6,
+    1.025,
+    0.225
+   ],
+   "min": [
+    -0.3,
+    0.0,
+    -0.1
+   ],
+   "max": [
+    0.3,
+    1.025,
+    0.125
+   ],
+   "verts": 396,
+   "tris": 228,
+   "bytes": 15552,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_statue",
+   "file": "Props/ka_statue.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "statue",
+    "decor"
+   ],
+   "size": [
+    0.7,
+    1.336,
+    0.7
+   ],
+   "min": [
+    -0.35,
+    0.0,
+    -0.35
+   ],
+   "max": [
+    0.35,
+    1.336,
+    0.35
+   ],
+   "verts": 957,
+   "tris": 549,
+   "bytes": 37356,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_tree",
+   "file": "Props/ka_tree.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "tree",
+    "nature"
+   ],
+   "size": [
+    0.65,
+    1.917,
+    0.651
+   ],
+   "min": [
+    -0.325,
+    0.0,
+    -0.326
+   ],
+   "max": [
+    0.325,
+    1.917,
+    0.326
+   ],
+   "verts": 632,
+   "tris": 330,
+   "bytes": 24326,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_border_straight",
+   "file": "Props/ka_border_straight.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "border",
+    "arena"
+   ],
+   "size": [
+    1.0,
+    0.4,
+    0.6
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.3
+   ],
+   "max": [
+    0.5,
+    0.4,
+    0.3
+   ],
+   "verts": 96,
+   "tris": 60,
+   "bytes": 3945,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "ka_border_corner",
+   "file": "Props/ka_border_corner.expak",
+   "group": "ka",
+   "category": "prop",
+   "tags": [
+    "border",
+    "arena"
+   ],
+   "size": [
+    0.8,
+    0.4,
+    0.8
+   ],
+   "min": [
+    -0.3,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.4,
+    0.3
+   ],
+   "verts": 188,
+   "tris": 122,
+   "bytes": 7631,
+   "source": "Kenney Mini Arena (CC0, Kenney)"
+  },
+  {
+   "key": "kc_building_a",
+   "file": "Props/kc_building_a.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "building",
+    "house"
+   ],
+   "size": [
+    1.0,
+    0.95,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.95,
+    0.5
+   ],
+   "verts": 734,
+   "tris": 452,
+   "bytes": 29059,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_building_b",
+   "file": "Props/kc_building_b.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "building",
+    "house"
+   ],
+   "size": [
+    1.0,
+    1.626,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.626,
+    0.5
+   ],
+   "verts": 926,
+   "tris": 600,
+   "bytes": 36979,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_building_c",
+   "file": "Props/kc_building_c.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "building",
+    "house"
+   ],
+   "size": [
+    1.0,
+    1.75,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.75,
+    0.5
+   ],
+   "verts": 1320,
+   "tris": 834,
+   "bytes": 52395,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_building_d",
+   "file": "Props/kc_building_d.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "building",
+    "house"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.05
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.55
+   ],
+   "verts": 728,
+   "tris": 448,
+   "bytes": 28819,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_building_garage",
+   "file": "Props/kc_building_garage.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "building",
+    "garage"
+   ],
+   "size": [
+    1.0,
+    0.55,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.55,
+    0.5
+   ],
+   "verts": 340,
+   "tris": 196,
+   "bytes": 13384,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_road_straight",
+   "file": "Props/kc_road_straight.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "road",
+    "ground"
+   ],
+   "size": [
+    1.0,
+    0.05,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    -0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "verts": 88,
+   "tris": 54,
+   "bytes": 3614,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_road_corner",
+   "file": "Props/kc_road_corner.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "road",
+    "ground"
+   ],
+   "size": [
+    1.0,
+    0.06,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.06,
+    0.5
+   ],
+   "verts": 188,
+   "tris": 126,
+   "bytes": 7676,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_road_intersection",
+   "file": "Props/kc_road_intersection.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "road",
+    "ground"
+   ],
+   "size": [
+    1.0,
+    0.05,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    -0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.05,
+    0.5
+   ],
+   "verts": 228,
+   "tris": 154,
+   "bytes": 9298,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_road_lights",
+   "file": "Props/kc_road_lights.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "road",
+    "light",
+    "ground"
+   ],
+   "size": [
+    1.0,
+    0.55,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    -0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.55,
+    0.5
+   ],
+   "verts": 316,
+   "tris": 190,
+   "bytes": 12540,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_pavement",
+   "file": "Props/kc_pavement.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "ground",
+    "pavement"
+   ],
+   "size": [
+    1.0,
+    0.06,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.06,
+    0.5
+   ],
+   "verts": 40,
+   "tris": 20,
+   "bytes": 1665,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_pavement_fountain",
+   "file": "Props/kc_pavement_fountain.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "ground",
+    "decor"
+   ],
+   "size": [
+    1.0,
+    0.536,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.536,
+    0.5
+   ],
+   "verts": 248,
+   "tris": 152,
+   "bytes": 9914,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_grass",
+   "file": "Props/kc_grass.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "grass",
+    "nature",
+    "plant"
+   ],
+   "size": [
+    1.0,
+    0.06,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.06,
+    0.5
+   ],
+   "verts": 60,
+   "tris": 30,
+   "bytes": 2422,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_grass_trees",
+   "file": "Props/kc_grass_trees.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "tree",
+    "nature"
+   ],
+   "size": [
+    1.0,
+    0.636,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.636,
+    0.5
+   ],
+   "verts": 712,
+   "tris": 380,
+   "bytes": 27492,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kc_grass_trees_tall",
+   "file": "Props/kc_grass_trees_tall.expak",
+   "group": "kc",
+   "category": "prop",
+   "tags": [
+    "tree",
+    "nature"
+   ],
+   "size": [
+    1.072,
+    0.76,
+    1.006
+   ],
+   "min": [
+    -0.572,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.76,
+    0.506
+   ],
+   "verts": 884,
+   "tris": 472,
+   "bytes": 34105,
+   "source": "Kenney City Builder (CC0, Kenney)"
+  },
+  {
+   "key": "kf_wall_high",
+   "file": "Props/kf_wall_high.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "barrier",
+    "site"
+   ],
+   "size": [
+    1.5,
+    1.7,
+    0.7
+   ],
+   "min": [
+    -0.75,
+    0.0,
+    -0.35
+   ],
+   "max": [
+    0.75,
+    1.7,
+    0.35
+   ],
+   "verts": 364,
+   "tris": 208,
+   "bytes": 14289,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_wall_low",
+   "file": "Props/kf_wall_low.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "wall",
+    "barrier",
+    "site"
+   ],
+   "size": [
+    2.2,
+    0.8,
+    0.7
+   ],
+   "min": [
+    -1.1,
+    0.0,
+    -0.35
+   ],
+   "max": [
+    1.1,
+    0.8,
+    0.35
+   ],
+   "verts": 304,
+   "tris": 178,
+   "bytes": 12008,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_platform",
+   "file": "Props/kf_platform.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "platform",
+    "ground"
+   ],
+   "size": [
+    2.2,
+    0.5,
+    2.2
+   ],
+   "min": [
+    -1.1,
+    0.0,
+    -1.1
+   ],
+   "max": [
+    1.1,
+    0.5,
+    1.1
+   ],
+   "verts": 296,
+   "tris": 180,
+   "bytes": 11776,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_platform_grass",
+   "file": "Props/kf_platform_grass.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "platform",
+    "ground"
+   ],
+   "size": [
+    5.2,
+    0.5,
+    5.2
+   ],
+   "min": [
+    -2.6,
+    0.0,
+    -2.6
+   ],
+   "max": [
+    2.6,
+    0.5,
+    2.6
+   ],
+   "verts": 296,
+   "tris": 180,
+   "bytes": 11782,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_grass",
+   "file": "Props/kf_grass.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "grass",
+    "nature",
+    "plant"
+   ],
+   "size": [
+    0.511,
+    0.309,
+    0.536
+   ],
+   "min": [
+    -0.255,
+    0.0,
+    -0.268
+   ],
+   "max": [
+    0.255,
+    0.309,
+    0.268
+   ],
+   "verts": 144,
+   "tris": 72,
+   "bytes": 5613,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_grass_small",
+   "file": "Props/kf_grass_small.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "grass",
+    "nature",
+    "plant_stage1"
+   ],
+   "size": [
+    0.248,
+    0.258,
+    0.313
+   ],
+   "min": [
+    -0.124,
+    0.0,
+    -0.156
+   ],
+   "max": [
+    0.124,
+    0.258,
+    0.156
+   ],
+   "verts": 144,
+   "tris": 72,
+   "bytes": 5619,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_cloud",
+   "file": "Props/kf_cloud.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "cloud",
+    "sky"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.5
+   ],
+   "verts": 432,
+   "tris": 204,
+   "bytes": 16413,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kf_drone",
+   "file": "Props/kf_drone.expak",
+   "group": "kf",
+   "category": "prop",
+   "tags": [
+    "drone",
+    "enemy",
+    "bot"
+   ],
+   "size": [
+    1.2,
+    0.875,
+    0.759
+   ],
+   "min": [
+    -0.6,
+    0.0,
+    -0.324
+   ],
+   "max": [
+    0.6,
+    0.875,
+    0.435
+   ],
+   "verts": 1030,
+   "tris": 544,
+   "bytes": 39629,
+   "source": "Kenney Starter Kit FPS (CC0, Kenney)"
+  },
+  {
+   "key": "kp_brick",
+   "file": "Props/kp_brick.expak",
+   "group": "kp",
+   "category": "prop",
+   "tags": [
+    "block",
+    "brick"
+   ],
+   "size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "min": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    1.0,
+    0.5
+   ],
+   "verts": 408,
+   "tris": 188,
+   "bytes": 15458,
+   "source": "Kenney Starter Kit 3D Platformer (CC0, Kenney)"
+  },
+  {
+   "key": "kp_platform_medium",
+   "file": "Props/kp_platform_medium.expak",
+   "group": "kp",
+   "category": "prop",
+   "tags": [
+    "platform",
+    "ground"
+   ],
+   "size": [
+    3.0,
+    0.55,
+    3.0
+   ],
+   "min": [
+    -1.5,
+    0.0,
+    -1.5
+   ],
+   "max": [
+    1.5,
+    0.55,
+    1.5
+   ],
+   "verts": 312,
+   "tris": 188,
+   "bytes": 12396,
+   "source": "Kenney Starter Kit 3D Platformer (CC0, Kenney)"
+  },
+  {
+   "key": "kp_platform_large",
+   "file": "Props/kp_platform_large.expak",
+   "group": "kp",
+   "category": "prop",
+   "tags": [
+    "platform",
+    "ground"
+   ],
+   "size": [
+    5.0,
+    0.55,
+    5.0
+   ],
+   "min": [
+    -2.5,
+    0.0,
+    -2.5
+   ],
+   "max": [
+    2.5,
+    0.55,
+    2.5
+   ],
+   "verts": 432,
+   "tris": 254,
+   "bytes": 17027,
+   "source": "Kenney Starter Kit 3D Platformer (CC0, Kenney)"
+  },
+  {
+   "key": "kp_coin",
+   "file": "Props/kp_coin.expak",
+   "group": "kp",
+   "category": "prop",
+   "tags": [
+    "coin",
+    "valuable",
+    "small"
+   ],
+   "size": [
+    0.415,
+    0.417,
+    0.167
+   ],
+   "min": [
+    -0.208,
+    -0.0,
+    -0.083
+   ],
+   "max": [
+    0.208,
+    0.417,
+    0.083
+   ],
+   "verts": 392,
+   "tris": 252,
+   "bytes": 15713,
+   "source": "Kenney Starter Kit 3D Platformer (CC0, Kenney)"
+  },
+  {
+   "key": "kp_flag",
+   "file": "Props/kp_flag.expak",
+   "group": "kp",
+   "category": "prop",
+   "tags": [
+    "flag",
+    "decor"
+   ],
+   "size": [
+    0.2,
+    1.235,
+    0.685
+   ],
+   "min": [
+    -0.1,
+    0.0,
+    -0.1
+   ],
+   "max": [
+    0.1,
+    1.235,
+    0.585
+   ],
+   "verts": 232,
+   "tris": 132,
+   "bytes": 9153,
+   "source": "Kenney Starter Kit 3D Platformer (CC0, Kenney)"
+  },
+  {
+   "key": "kp_dust",
+   "file": "Props/kp_dust.expak",
+   "group": "kp",
+   "category": "prop",
+   "tags": [
+    "fx",
+    "particle"
+   ],
+   "size": [
+    0.363,
+    0.33,
+    0.363
+   ],
+   "min": [
+    -0.182,
+    -0.165,
+    -0.182
+   ],
+   "max": [
+    0.182,
+    0.165,
+    0.182
+   ],
+   "verts": 636,
+   "tris": 336,
+   "bytes": 24529,
+   "source": "Kenney Starter Kit 3D Platformer (CC0, Kenney)"
+  }
+ ],
+ "roles": {
+  "wall_interior": [
+   "pb_wall",
+   "dg_wall",
+   "pb_wall_half"
+  ],
+  "floor_interior": [
+   "pb_floor",
+   "dg_floor_tile",
+   "pb_floor_prototype"
+  ],
+  "door": [
+   "pb_door_a",
+   "pb_door_b"
+  ],
+  "doorway": [
+   "pb_wall_doorway",
+   "dg_wall_doorway"
+  ],
+  "window": [
+   "pb_wall_window_open",
+   "dg_wall_window_open"
+  ],
+  "pillar": [
+   "pb_pillar_a",
+   "pb_pillar_b",
+   "dg_column"
+  ],
+  "stairs": [
+   "pb_stairs",
+   "dg_stairs",
+   "ka_stairs"
+  ],
+  "crate": [
+   "sb_cargo_a",
+   "pb_box_a",
+   "dg_box_small",
+   "sb_containers_a"
+  ],
+  "crate_large": [
+   "dg_box_large",
+   "sb_cargodepot_a",
+   "dg_crates_stacked"
+  ],
+  "barrel": [
+   "pb_barrel_a",
+   "pb_barrel_b",
+   "dg_barrel_large"
+  ],
+  "container": [
+   "sb_containers_a",
+   "sb_containers_b",
+   "sb_cargo_a_stacked"
+  ],
+  "building": [
+   "kc_building_a",
+   "kc_building_b",
+   "kc_building_c",
+   "kc_building_d"
+  ],
+  "tree": [
+   "ka_tree",
+   "kc_grass_trees",
+   "kc_grass_trees_tall"
+  ],
+  "grass": [
+   "kf_grass",
+   "kc_grass",
+   "kf_grass_small"
+  ],
+  "plant_stage1": [
+   "kf_grass_small"
+  ],
+  "plant_stage2": [
+   "kf_grass"
+  ],
+  "plant_stage3": [
+   "kc_grass"
+  ],
+  "plant_stage4": [
+   "kc_grass_trees"
+  ],
+  "plant_stage5": [
+   "kc_grass_trees_tall"
+  ],
+  "bed": [
+   "dg_bed_frame",
+   "dg_bed_decorated"
+  ],
+  "shelf": [
+   "dg_shelf_large",
+   "dg_shelf_small"
+  ],
+  "table": [
+   "dg_table_small",
+   "pb_table_medium"
+  ],
+  "chest": [
+   "dg_chest",
+   "dg_chest_gold"
+  ],
+  "trunk": [
+   "dg_trunk_small",
+   "dg_trunk_medium",
+   "dg_trunk_large"
+  ],
+  "light": [
+   "sb_lights",
+   "dg_torch"
+  ],
+  "rack": [
+   "ka_weapon_rack"
+  ],
+  "module": [
+   "sb_basemodule_a",
+   "sb_basemodule_b",
+   "sb_basemodule_c"
+  ],
+  "roof": [
+   "sb_roofmodule_base",
+   "sb_roofmodule_cargo_a"
+  ],
+  "tunnel": [
+   "sb_tunnel_straight_a",
+   "sb_tunnel_diagonal_long_a"
+  ],
+  "target": [
+   "pb_wall_target",
+   "pb_target_small",
+   "pb_target_stand_a"
+  ],
+  "vehicle": [
+   "sb_spacetruck",
+   "sb_spacetruck_large"
+  ],
+  "furniture": [
+   "dg_shelf_large",
+   "dg_table_small",
+   "dg_bed_frame",
+   "dg_chair"
+  ],
+  "storage": [
+   "dg_shelf_large",
+   "dg_trunk_medium",
+   "dg_wall_shelves"
+  ],
+  "cover": [
+   "sb_containers_a",
+   "sb_cargodepot_a",
+   "dg_crates_stacked",
+   "sb_spacetruck"
+  ],
+  "road": [
+   "kc_road_straight",
+   "kc_road_corner",
+   "kc_road_intersection"
+  ],
+  "pavement": [
+   "kc_pavement"
+  ],
+  "wall_site": [
+   "kf_wall_high",
+   "kf_wall_low",
+   "sb_structure_low"
+  ],
+  "terrain": [
+   "sb_terrain_low",
+   "sb_terrain_mining"
+  ],
+  "rock": [
+   "sb_rock_a",
+   "sb_rocks_a"
+  ],
+  "pallet": [
+   "pb_pallet_large",
+   "pb_pallet_small"
+  ],
+  "machine": [
+   "sb_drill_structure",
+   "sb_solarpanel"
+  ],
+  "decor": [
+   "ka_banner",
+   "ka_statue",
+   "kp_flag"
+  ],
+  "drone": [
+   "kf_drone"
+  ]
+ }
+}
